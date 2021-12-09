@@ -1,0 +1,44 @@
+.Access-Frame {
+    width: 794px;
+    height: 483px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+    gap: 10px;
+    margin: 1px 0 0;
+    padding: 0px 15px;
+    background-color: #005eef;
+}
+.Access-title{
+  align-self: stretch;
+  flex-grow: 1;
+  height: 121px;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: normal;      
+  color: #fff;
+}
+.Vector-92 {
+  width: 794px;
+  height: 1px;
+  margin: 242.5px 0 240.5px;
+  background-color: white;
+}
+.Exports-title {
+    align-self: stretch;
+    flex-grow: 1;
+    height: 120px;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: normal;      
+    color: #fff;
+}
