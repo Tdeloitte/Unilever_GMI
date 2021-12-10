@@ -1,13 +1,12 @@
 .Access-Frame {
     width: 794px;
-    height: 242px;
+    height: 483px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: stretch;
-    gap: 10px;
-    margin: 1px 0 0;
-    padding: 0px 15px;
+    gap: 1px;
+    padding: 0px 1px;
     background-color: #005eef;
 }
 .Access-title{
@@ -39,6 +38,8 @@
 }
 .Vector-92 {
   width: 794px;
+  height: 1px;
+  margin: 2px 0px;
   background-color: white;
 }
 .Export-title {
