@@ -1,76 +1,85 @@
 .Access-Frame {
-    width: 794px;
-    height: 242px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: stretch;
-    gap: 10px;
-    margin: 1px 0 0;
-    padding: 0px 15px;
-    background-color: #005eef;
+  width: 794px;
+  height: 483px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: stretch;
+  gap: 1px;
+  padding: 0px 1px;
+  background-color: #005eef;
 }
 .Access-title{
+display: flex;
+align-self: stretch;
+flex-grow: 1;
+height: 121px;
+font-size: 36px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+font-family: 'Segoe UI';
+// text-align: left;
+line-height: 1.2;
+letter-spacing: normal;      
+color: #fff;
+}
+.Access-report{
+display: flex;
+}
+.Access-report span{
+padding: 121px 30px;
+justify-content: left;
+}
+.Text {
+align-self: stretch;
+flex-grow: 1;
+font-family: 'Segoe UI';
+font-size: 16px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.4;
+letter-spacing: normal;
+text-align: left;
+color: #fff;
+}
+.Vector-92 {
+width: 794px;
+height: 1px;
+margin: 2px 0px;
+background-color: white;
+}
+.Export-title {
   align-self: stretch;
   flex-grow: 1;
-  height: 121px;
+  height: 1px;
   font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   line-height: 1.2;
   letter-spacing: normal;      
   color: #fff;
 }
-.Text {
-  align-self: stretch;
-  flex-grow: 1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-}
-.Vector-92 {
-  width: 794px;
-  background-color: white;
-}
-.Export-title {
-    align-self: stretch;
-    flex-grow: 1;
-    height: 1px;
-    font-size: 36px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    text-align: left;
-    line-height: 1.2;
-    letter-spacing: normal;      
-    color: #fff;
-}
 .Enter {
-  width: 43px;
-  height: 16px;
-  flex-grow: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  color: #fff;
+width: 43px;
+height: 16px;
+flex-grow: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 16px;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+line-height: 1;
+letter-spacing: normal;
+text-align: center;
+color: #fff;
 }
 img.Picture-tile {
-  width: 646px;
-  height: 483px;
-  margin: 1px 0 0;
-  object-fit: contain;
+width: 646px;
+height: 483px;
+margin: 1px 0 0;
+object-fit: contain;
 }
