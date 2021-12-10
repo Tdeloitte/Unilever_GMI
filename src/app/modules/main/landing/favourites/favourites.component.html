@@ -1,1 +1,35 @@
-<p>favourites work!</p>
+<div class="favourites-div">
+  <div style="display: flex">
+    <div style="margin-bottom: 41px; display: flex">
+      <div>
+        <img src="./assets/Star.png" height="26px" width="26px" />
+      </div>
+      <div>
+        <span
+          style="
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+            margin-left: 20px;
+            line-height: 1.1;
+          "
+          >Favourites</span
+        >
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <div class="favourites-tiles">
+      <div *ngFor="let fav of favourites" >
+          <div style="display: flex;width:287px;height: 40px;border:1px solid #5b5b5b;margin-bottom:13px;margin-right:13px;">
+            <div style="width: 40px;">
+            hi
+            </div>
+            <div class="favourites-text">
+            hey 
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div>
