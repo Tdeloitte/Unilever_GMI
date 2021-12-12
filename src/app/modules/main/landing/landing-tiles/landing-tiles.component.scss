@@ -7,7 +7,12 @@
   align-items: stretch;
   gap: 1px;
   padding: 0px 1px;
-  background-color: #005eef;
+
+}
+.report-Tiles{
+  width: 794px;
+  height: 483px;
+  background-color: #005eef; 
 }
 .Access-title{
 display: flex;
@@ -43,6 +48,8 @@ line-height: 1.4;
 letter-spacing: normal;
 text-align: left;
 color: #fff;
+width: 462px;
+height: 242px;
 }
 .Vector-92 {
 width: 794px;
@@ -80,6 +87,6 @@ color: #fff;
 img.Picture-tile {
 width: 646px;
 height: 483px;
-margin: 1px 0 0;
+
 object-fit: contain;
 }
