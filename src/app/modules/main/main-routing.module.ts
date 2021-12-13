@@ -17,6 +17,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./landing/landing.module').then((m) => m.LandingModule),
       },
+      {
+        path: 'access-report',
+        loadChildren: () =>
+          import('./access-reports/access-reports.module').then((m) => m.AccessReportsModule),
+      },
     ],
   }
 ];
