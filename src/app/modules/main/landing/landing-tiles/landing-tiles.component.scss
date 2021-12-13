@@ -10,45 +10,45 @@
   background-color: #005eef;
 }
 .Access-title{
-display: flex;
-align-self: stretch;
-flex-grow: 1;
-height: 121px;
-font-size: 36px;
-font-weight: bold;
-font-stretch: normal;
-font-style: normal;
-font-family: 'Segoe UI';
-// text-align: left;
-line-height: 1.2;
-letter-spacing: normal;      
-color: #fff;
+  display: flex;
+  align-self: center;
+  flex-grow: 1;
+  height: 121px;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  font-family: 'Segoe UI';
+  line-height: 1.2;
+  letter-spacing: normal;      
+  color: #fff;
 }
 .Access-report{
-display: flex;
+  display: flex;
 }
 .Access-report span{
-padding: 121px 30px;
-justify-content: left;
+  padding: 121px 30px;
+  justify-content: left;
 }
 .Text {
-align-self: stretch;
-flex-grow: 1;
-font-family: 'Segoe UI';
-font-size: 16px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.4;
-letter-spacing: normal;
-text-align: left;
-color: #fff;
+  align-self: center;
+  flex-grow: 1;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
 }
 .Vector-92 {
-width: 794px;
-height: 1px;
-margin: 2px 0px;
-background-color: white;
+  width: 794px;
+  height: 1px;
+  margin: 2px 0px;
+  background-color: white;
 }
 .Export-title {
   align-self: stretch;
@@ -64,22 +64,55 @@ background-color: white;
   color: #fff;
 }
 .Enter {
-width: 43px;
-height: 16px;
-flex-grow: 0;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 16px;
-font-weight: 500;
-font-stretch: normal;
-font-style: normal;
-line-height: 1;
-letter-spacing: normal;
-text-align: center;
-color: #fff;
+  position: absolute;
+  width: 43px;
+  height: 16px;
+  flex-grow: 0;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.Enter-frame {
+  width: 67px;
+  height: 28px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 12px 7px;
+  background-color: #184ac9;
+}
+.Button-frame {
+  width: 27.8px;
+  height: 28px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 7px;
+  background-color: #184ac9;
+}
+.Polygon-frame {
+  align-items: flex-end;
+  width: 13.8px;
+  height: 12.4px;
+  flex-grow: 0;
+  transform: rotate(-270deg);
+  background-color: #fff;
 }
 img.Picture-tile {
-width: 646px;
-height: 483px;
-margin: 1px 0 0;
-object-fit: contain;
+  width: 646px;
+  height: 483px;
+  margin: 1px 0 0;
+  object-fit: contain;
 }
