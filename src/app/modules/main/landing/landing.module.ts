@@ -6,7 +6,7 @@ import { LandingTilesComponent } from './landing-tiles/landing-tiles.component';
 import { LandingComponent } from './landing/landing.component';
 import { LayoutModule } from '../layout/layout.module';
 import { LandingRoutingModule } from './landing-routing.module';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { LandingRoutingModule } from './landing-routing.module';
   imports: [
     CommonModule,
     LayoutModule,
-    LandingRoutingModule    
+    LandingRoutingModule,
+    NgxPaginationModule   
   ]
 })
 export class LandingModule { }

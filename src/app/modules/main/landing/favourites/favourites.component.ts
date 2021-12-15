@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FavouritesComponent implements OnInit {
 
   constructor() { }
+  totalLength:any;
+  page:number = 1;
   favourites : any =[
     {
       name:'India',
@@ -34,11 +36,139 @@ export class FavouritesComponent implements OnInit {
       name:'India',
       value: 'Market Share'
     },
+    {
+      name:'India',
+      value: 'Market Share'
+    },{
+      name:'India',
+      value: 'Market Share'
+    },{
+      name:'India',
+      value: 'Market Share'
+    },
+    ,{
+      name:'India',
+      value: 'Market Share'
+    },
+    ,{
+      name:'India',
+      value: 'Market Share'
+    },
+    ,{
+      name:'India',
+      value: 'Market Share'
+    },
+    ,{
+      name:'India',
+      value: 'Market Share'
+    },
+    ,{
+      name:'India',
+      value: 'Market Share'
+    },
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},
+,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},,{
+  name:'India',
+  value: 'Market Share'
+},
 
 
   ]
 
   ngOnInit(): void {
+   this.totalLength=this.favourites.length();
   }
 
 
