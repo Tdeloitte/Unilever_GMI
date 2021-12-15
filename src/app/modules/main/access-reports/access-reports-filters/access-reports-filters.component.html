@@ -1,0 +1,30 @@
+<div style="width:1440px">
+<div style="height: 47px;
+padding-top: 6px ;
+padding-bottom:  12px;
+padding-left: 24px;
+background-color: #00b190;font-size: 16px; color: #fff;line-height: 1.8;font-family:Segoe UI;">
+<span>Select the scenario</span>
+<span style="padding-left:17px" (click)="showScenario()"> 
+    <img id="arrow" [ngClass]="{'rotate': openScenario}" src="./assets/Arrow.png" width="12px" height="6px">
+    <!-- <img src="./assets/Arrow.png" width="12px" height="6px"> -->
+</span>
+</div>
+<div *ngIf="openScenario" style="height: 78px;
+padding-top: 6px ;
+background-color: #00b190;display: flex;">
+<div class="filter-div"><div style="height: 40px;width:40px;"><img src="./assets/percentage.png" width="36px" height="36px"></div> <div style="padding-left:12px;padding-right: 12px;">Percentage of Business Winning</div></div>
+<div class="filter-div"><div style="height: 40px;width:40px;"><img src="./assets/Arrow.png" width="36px" height="36px"></div> <div style="padding-left:12px;padding-right: 12px;">Global Distribution Led Growth</div></div>
+<div class="filter-div"><div style="height: 40px;width:40px;"><img src="./assets/check.png" width="38px" height="38px"></div> <div style="padding-left:12px;padding-right: 12px;">Competitive Market Position</div></div>
+<div class="filter-div" style="padding-top:10px"><div style="height: 40px;width:40px;"><img src="./assets/Arrow.png" width="36px" height="36px"></div> <div style="padding-left:12px;padding-right: 12px;">MKT Share Development Cell Key Drivers</div></div>
+<div class="filter-div"><div style="height: 40px;width:40px;"><img src="./assets/pie.png" width="38px" height="38px"></div> <div style="padding-left:12px;padding-right: 12px;">MKT Share Development</div></div>
+<div class="filter-div"><div style="height: 40px;width:40px;"><img src="./assets/elevate.png" width="38px" height="38px"></div> <div style="padding-left:12px;padding-right: 12px;">Company vs. Market growth</div></div>
+</div>
+
+<div style="height:116px;background-color: #fae44c;padding-left: 24px;padding-bottom: 18px;">
+    <div style="height: 38px;">
+
+    </div>
+</div>
+
+</div>
