@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { FeedbackComponent } from '../feedback/feedback.component';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+  feedbackModalRef: any = {};
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  onFeedBack() {
+    this.feedbackModalRef = this.dialog.open(FeedbackComponent, {
+      width: '30vw',
+    });
   }
 
+  onClose() {
+    (this.feedbackModalRef as MatDialogRef<FeedbackComponent>).close();
+  }
 }
