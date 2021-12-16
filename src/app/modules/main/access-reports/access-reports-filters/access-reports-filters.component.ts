@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccessReportsFiltersComponent implements OnInit {
   openScenario=false;
+  openFilters=false;
    
   constructor() { }
   
@@ -17,5 +18,8 @@ export class AccessReportsFiltersComponent implements OnInit {
   showScenario(){
     this.openScenario=!this.openScenario; 
       
+  }
+  showFilters(){
+    this.openFilters=!this.openFilters;
   }
 }
