@@ -13,163 +13,27 @@ export class FavouritesComponent implements OnInit {
   favourites : any =[
     {
       name:'India',
-      value: 'Market Share'
+      value: 'Market Share Development',
+      type: 'export'
     },
     {
       name:'India',
-      value: 'Market Share'
+      value: 'India',
+      type: 'access'
     },
-    {
-      name:'India',
-      value: 'Market Share'
-    },
-    {
-      name:'India',
-      value: 'Market Share'
-    },
-    {
-      name:'India',
-      value: 'Market Share'
-    },
-
-    {
-      name:'India',
-      value: 'Market Share'
-    },
-    {
-      name:'India',
-      value: 'Market Share'
-    },{
-      name:'India',
-      value: 'Market Share'
-    },{
-      name:'India',
-      value: 'Market Share'
-    },
-    ,{
-      name:'India',
-      value: 'Market Share'
-    },
-    ,{
-      name:'India',
-      value: 'Market Share'
-    },
-    ,{
-      name:'India',
-      value: 'Market Share'
-    },
-    ,{
-      name:'India',
-      value: 'Market Share'
-    },
-    ,{
-      name:'India',
-      value: 'Market Share'
-    },
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},
-,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},,{
-  name:'India',
-  value: 'Market Share'
-},
-
+  
+  
 
   ]
 
   ngOnInit(): void {
    this.totalLength=this.favourites.length();
   }
-
+  checkIconType(fav:any){
+    if (fav.type == "export"){
+      return false
+    }
+    else return true;
+  }
 
 }
