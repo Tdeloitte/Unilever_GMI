@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
 
   onFeedBack() {
     this.feedbackModalRef = this.dialog.open(FeedbackComponent, {
-      width: '30vw',
+      width: '40vw',
     });
   }
 

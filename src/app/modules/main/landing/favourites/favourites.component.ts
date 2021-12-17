@@ -13,12 +13,52 @@ export class FavouritesComponent implements OnInit {
   favourites : any =[
     {
       name:'India',
-      value: 'Market Share Development',
+      value: 'India',
       type: 'export'
     },
     {
       name:'India',
-      value: 'India',
+      value: 'Market Share Development',
+      type: 'access'
+    },
+    {
+      name:'India',
+      value: 'Ireland',
+      type: 'export'
+    },
+    {
+      name:'India',
+      value: 'Market Share Development',
+      type: 'access'
+    },
+    {
+      name:'India',
+      value: 'Poland',
+      type: 'export'
+    },
+    {
+      name:'India',
+      value: 'Market Share Development',
+      type: 'access'
+    },
+    {
+      name:'India',
+      value: ' Canada',
+      type: 'export'
+    },
+    {
+      name:'India',
+      value: 'Market Share Development',
+      type: 'access'
+    },
+    {
+      name:'India',
+      value: 'France',
+      type: 'export'
+    },
+    {
+      name:'India',
+      value: 'Market Share Development',
       type: 'access'
     },
   
