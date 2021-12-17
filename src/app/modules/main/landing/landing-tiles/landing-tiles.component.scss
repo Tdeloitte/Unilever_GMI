@@ -138,6 +138,11 @@ object-fit: contain;
     background-color: white;
   }
   .Polygon-1{
-    color: #184ac9;
+    width: 0;
+    height: 0;
+    border-top: 2px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 12px solid blue;
+    transform: rotate(132deg);
   }
 }
