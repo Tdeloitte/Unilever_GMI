@@ -21,6 +21,9 @@
     color: #000;
     font-size: 14px;
 }
+.favourite-tile:hover{
+  background-color:#DCDCDC;
+}
 
 .ngx-pagination ::ng-deep  .pagination-previous .disabled {
   color: white !important ;
