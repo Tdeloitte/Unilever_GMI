@@ -10,7 +10,8 @@ export class FavouritesComponent implements OnInit {
   constructor() { }
   totalLength:any;
   page:number = 1;
-  favourites : any =[
+  openPagination:boolean=false;
+  favourites : any[] =[
     {
       name:'India',
       value: 'India',
@@ -61,13 +62,35 @@ export class FavouritesComponent implements OnInit {
       value: 'Market Share Development',
       type: 'access'
     },
+    {
+      name:'India',
+      value: 'Market Share Development',
+      type: 'access'
+    },
+    {
+      name:'India',
+      value: 'France',
+      type: 'export'
+    },
+    {
+      name:'India',
+      value: 'Market Share Development',
+      type: 'access'
+    },
   
   
 
   ]
 
   ngOnInit(): void {
-   this.totalLength=this.favourites.length();
+   this.totalLength=this.favourites.length;
+   if(this.totalLength>6){
+     this.openPagination=true
+   }
+   else{
+     this.openPagination=false;
+   }
+   
   }
   checkIconType(fav:any){
     if (fav.type == "export"){

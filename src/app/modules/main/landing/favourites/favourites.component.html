@@ -19,7 +19,7 @@
             
       </div>
     </div>
-    <div  *ngIf="totalLength > 6" style="position:absolute;margin-right: 10px;right:0px;"><pagination-controls (pageChange)="page = $event" previousLabel="" [maxSize]="5"
+    <div  *ngIf="openPagination" style="position:absolute;margin-right: 10px;right:0px;"><pagination-controls (pageChange)="page = $event" previousLabel="" [maxSize]="5"
       nextLabel="" ></pagination-controls></div>
   </div>
   <div class="favourites-tiles">
