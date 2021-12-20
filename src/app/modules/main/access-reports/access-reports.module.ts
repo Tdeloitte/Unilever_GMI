@@ -4,6 +4,7 @@ import { AccessReportsFiltersComponent } from './access-reports-filters/access-r
 import { AccessReportsRoutingModule } from './access-reports-routing.module';
 import { AccessReportsComponent } from './access-reports/access-reports.component';
 import { AccessReportsDashboardComponent } from './access-reports-dashboard/access-reports-dashboard.component';
+import { AccessReportsSelectDropdownComponent } from './access-reports-select-dropdown/access-reports-select-dropdown.component';
 
 
 
@@ -11,7 +12,8 @@ import { AccessReportsDashboardComponent } from './access-reports-dashboard/acce
   declarations: [
     AccessReportsFiltersComponent,
     AccessReportsComponent,
-    AccessReportsDashboardComponent
+    AccessReportsDashboardComponent,
+    AccessReportsSelectDropdownComponent
   ],
   imports: [
     CommonModule,
