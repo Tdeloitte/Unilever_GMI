@@ -10,7 +10,17 @@ export class HeaderComponent implements OnInit {
   constructor(private commonService: CommonService) { }
   
   ngOnInit(): void {
-    this.commonService.reportType.subscribe(res=>this.headerType=res);
+    this.commonService.reportType.subscribe((res)=>{this.headerType=res;
+      if(this.headerType !=="Home"){
+        let element=document.getElementById("navbar");
+        if(element != null){
+          element.style.backgroundColor="#005eef";
+          element.style.color="#fff";
+        
+        }
+      }
+    }
+    );
+    
   }
-
 }
