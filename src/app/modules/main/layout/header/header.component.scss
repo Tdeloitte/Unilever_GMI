@@ -52,3 +52,17 @@
     // line-height: 1.4;
     // letter-spacing: normal;
 }
+.white{
+color: white !important;
+
+}
+.blueBackground{
+    background-color: #005eef ;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color:#005eef !important ;
+}
+.navbar{
+    border-radius: 0px;
+}
