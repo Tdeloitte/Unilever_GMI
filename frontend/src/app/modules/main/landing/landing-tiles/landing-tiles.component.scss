@@ -1,8 +1,9 @@
+@import "src/assets/scss/variables.scss"; 
 
 .report-Tiles{
   width: 55%;
   height: 472.28px;
-  background-color: #005eef; 
+  background-color: $dark-blue; 
 }
 .Title {
   // padding-left: 10px;
