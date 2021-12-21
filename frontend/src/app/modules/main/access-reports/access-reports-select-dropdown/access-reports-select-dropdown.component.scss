@@ -59,16 +59,29 @@
   .tree-container {
     width: 336px;
     max-height: 449px;
-    padding: 9px 3px 0 0;
+    padding: 9px 3px 5px 5px;
     border: solid 1px #c8b63d;
     background-color: #fae44c;
     overflow: hidden;
     scroll-behavior: auto;
+
+    .child-container {
+      border-left: 1.5px solid;
+      padding-left: 10px;
+    }
+    .node > node-label {
+      display: flex;
+      span {
+        content: "something";
+        height: 50%;
+        border-bottom: 1.5px solid;
+      }
+    }
   }
 }
 
 input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label{
+input:not(:focus):valid ~ .floating-label {
   top: 8px;
   bottom: 10px;
   left: 20px;
@@ -88,4 +101,45 @@ input:not(:focus):valid ~ .floating-label{
   left: 20px;
   top: 18px;
   transition: 0.2s ease all;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  line-height: 1;
+  font-size: 16px;
+  padding-left: 1em;
+  li {
+    padding-left: 10px;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    p {
+      margin: 1px;
+      background: #fae44c;
+      position: relative;
+      // TODO change this 
+      top: 8px;
+    }
+    ul {
+      border-top: 1px solid black;
+      margin-left: -10px;
+      padding-left: 20px;
+    }
+    &.container {
+      border-bottom: 0px;
+    }
+    &.empty {
+      font-style: italic;
+      color: silver;
+      border-color: silver;
+    }
+    &:last-child ul {
+      border-left: 1px solid white;
+      margin-left: -10px;
+    }
+  }
 }
