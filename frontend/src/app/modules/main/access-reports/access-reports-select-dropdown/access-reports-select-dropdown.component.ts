@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-access-reports-select-dropdown',
@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./access-reports-select-dropdown.component.scss'],
 })
 export class AccessReportsSelectDropdownComponent implements OnInit {
+  @Input('title')
+  title: string = '';
   openDropdown = false;
   constructor() {}
-
+  @Input('tree')
+  tree: any = {};
+  
   ngOnInit(): void {}
 
   onOpenDropdown() {

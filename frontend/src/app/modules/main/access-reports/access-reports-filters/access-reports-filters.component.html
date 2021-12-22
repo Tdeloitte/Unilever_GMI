@@ -99,7 +99,9 @@
       </span>
     </div>
     <div *ngIf="openFilters" class="filters-class">
-      <div><select class="filter" name="cars" id="cars" ><option value="" disabled selected hidden>Geography</option></select></div>
+      <div>
+        <app-access-reports-select-dropdown [title]="'Geography'" [tree]="tree"></app-access-reports-select-dropdown>
+      </div>
       <div><select class="filter" id="cas"><option value="" disabled selected hidden>Category</option></select></div>
       <div><select class="filter" id="car"><option value="" disabled selected hidden>Brand</option></select></div>
       <div><select class="filter" id="ca"><option value="" disabled selected hidden>Channel</option></select></div>

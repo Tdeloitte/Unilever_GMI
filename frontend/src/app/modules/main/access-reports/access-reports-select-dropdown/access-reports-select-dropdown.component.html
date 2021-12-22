@@ -1,94 +1,12 @@
 <div class="tree-dropdown">
   <div class="tree-dropdown-input" (click)="onOpenDropdown()">
     <input class="search-input" type="text" name="search-input" id="search-input">
-    <span class="floating-label">Geography</span>
+    <span class="floating-label">{{title}}</span>
     <button class="toggle-button">
-      <img id="arrow" [ngClass]="{ rotate: openDropdown }" src="./assets/Arrow-up-black.png" />
+      <img id="arrow" [ngClass]="{ rotate: openDropdown }" src="./assets/images/Arrow-up-black.png" />
     </button>
   </div>
   <div class="tree-container" *ngIf="openDropdown">
-    <!-- <div>
-      <div class="node">
-        <div class="node-label">Root</div>
-        <div class="child-container">
-          <div class="node">
-            <div class="node-label">
-              Ch 1
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <ul>
-      <li class="container">
-        <p>Testing </p>
-        <ul>
-          <li>
-            <p>Testing 1</p>
-          </li>
-          <li>
-            <p>Testing 2</p>
-          </li>
-          <li class="container">
-            <p>Testing </p>
-            <ul>
-              <li>
-                <p>Testing X</p>
-                <ul>
-                  <li>
-                    <p>Testing X2</p>
-                    <ul>
-                      <li>
-                        <p>Testing 1</p>
-                      </li>
-                      <li>
-                        <p>Testing 2</p>
-                      </li>
-                      <li>
-                        <p>Testing 3</p>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <p>Testing 2</p>
-                  </li>
-                  <li>
-                    <p>Testing 3</p>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p>Testing 2</p>
-              </li>
-              <li>
-                <p>Testing 3</p>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li class="container">
-        <p>Testing </p>
-        <ul>
-          <li>
-            <p>Testing 1</p>
-          </li>
-          <li>
-            <p>Testing 2</p>
-          </li>
-          <li>
-            <p>Testing 3</p>
-          </li>
-        </ul>
-      </li>
-      <li class="container">
-        <p>Testing </p>
-        <ul>
-          <li class="empty">
-            <p>empty</p>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <app-tree-view [node]="tree"></app-tree-view>
   </div>
 </div>

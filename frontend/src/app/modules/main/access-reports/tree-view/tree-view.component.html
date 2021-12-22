@@ -1,0 +1,72 @@
+<ul>
+	<li [ngClass]="node?.children?.length ? 'container' : ''">
+		<p>{{ node?.label }}
+			<button class="child-toggle" (click)="onShowChildren()" *ngIf="node?.children?.length">
+				<img [ngClass]="{ rotate: showChildren }" src="assets/images/Arrow.png" />
+			</button>
+		</p>
+		<ng-container *ngIf="node?.children?.length && showChildren">
+			<app-tree-view [node]="item" *ngFor="let item of node.children"></app-tree-view>
+		</ng-container>
+	</li>
+</ul>
+
+<!-- <div>
+	<ul>
+		<li class="container">
+			<p>Testing </p>
+			<div>
+				<ul>
+					<li>
+						<p>Testing 1</p>
+					</li>
+					<li>
+						<p>Testing 2</p>
+					</li>
+					<li class="container">
+						<p>Testing </p>
+						<div>
+							<ul>
+								<li>
+									<p>Testing 1</p>
+								</li>
+								<li>
+									<p>Testing 2</p>
+								</li>
+								<li>
+									<p>Testing 3</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="container">
+			<p>Testing </p>
+			<div>
+				<ul>
+					<li>
+						<p>Testing 1</p>
+					</li>
+					<li>
+						<p>Testing 2</p>
+					</li>
+					<li>
+						<p>Testing 3</p>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="container">
+			<p>Testing </p>
+			<div>
+				<ul>
+					<li class="empty">
+						<p>empty</p>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div> -->
