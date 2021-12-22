@@ -12,4 +12,19 @@ export class AccessReportsDashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  arr :any[] =[{"name":"hey",
+"value":"hi"},
+{"name":"hey",
+"value":"hi"},
+{"name":"hey",
+"value":"hi"},
+{"name":"hey",
+"value":"hi"},
+{"name":"hey",
+"value":"hi"},
+{"name":"hey",
+"value":"hi"}]
+
+  
+
 }
