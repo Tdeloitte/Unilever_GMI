@@ -4,54 +4,45 @@ li {
   margin: 0;
   padding: 0;
 }
-ul {
-  line-height: 1;
-  font-size: 16px;
-  padding-left: 1em;
-  li {
-    padding-left: 10px;
-    border: 1px solid black;
-    border-width: 0 0 1px 1px;
-    p {
-      margin: 1px;
-      background: #fae44c;
-      position: relative;
-      // TODO change this
-      top: 8px;
 
+ul {
+  line-height: normal;
+  border: 1px solid black;
+  border-width: 0 0 0 1px;
+  margin-left: 10px;
+  li {
+    div {
+      padding-left: 10px;
+      border: 1px solid black;
+      border-width: 0 0 1px 0px;
+      &.root-node {
+        border: 0;
+      }
+      p {
+        padding-left: -5px;
+        padding-top: 10px;
+        margin-bottom: -10px;
+        background-color: #fae44c;
+      }
       .child-toggle {
         background-color: transparent;
         border: 0;
         outline: 0;
-
         img {
-          width: 12px;
-          height: 12px;
+          width: 10px;
+          height: 10px;
         }
-
         .rotate {
           transform: rotate(180deg);
         }
       }
     }
-    ul {
-      border-top: 1px solid black;
-      margin-left: -10px;
-      padding-left: 20px;
+    app-tree-view:not(:last-child) > ul {
+      border: 1px solid red !important;
+      border-width: 0 0 0 1px !important;
     }
-    &.container {
-      border-bottom: 0px;
-    }
-    &.empty {
-      font-style: italic;
-      color: silver;
-      border-color: silver;
-    }
-    &:last-child {
-      ul {
-        border-left: 1px solid white;
-        margin-left: -11px;
-      }
-    }
+  }
+  &.root-node {
+    border-left-width: 0;
   }
 }
