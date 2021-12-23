@@ -1,16 +1,39 @@
-<nav class="navbar navbar-transparent" style="margin-bottom: 0px; width:100%" id="navbar" >
+<!-- <nav class="navbar navbar-transparent" style="margin-bottom: 0px; width:100%" id="navbar" >
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="#" [ngClass]="{white: colorBlue}" >GMI</a>
+      <span class="navbar-brand" href="#" [ngClass]="{white: colorBlue}" >GMI</span>
     </div>
     <ul class="nav navbar-nav">
-      <li class="Home "><a href="#" [ngClass]="{white: colorBlue}">{{headerType}}</a></li>
+      <li class="Home "><span [ngClass]="{white: colorBlue}">{{headerType}}</span></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li class="User"><a href="#" [ngClass]="{white: colorBlue}"><span><img src="assets/images/Avatar.png"/></span></a></li>
-      <li><a class="User-name white" href="#" [ngClass]="{white: colorBlue}" ><span><i></i></span>John Smith</a></li>
-      <li><a href="#" ><span><img src="assets/images/Arrow.png"/></span></a></li>
+      <li class="User"><span [ngClass]="{white: colorBlue}"><span><img src="assets/images/Avatar.png"/></span></span></li>
+      <li><span class="User-name white" [ngClass]="{white: colorBlue}" ><span><i></i></span>John Smith</span></li>
+      <li><span  ><span><img src="assets/images/Arrow.png"/></span></span></li>
     </ul>
   </div>
-</nav>
+</nav> -->
 
+<div style="margin-bottom: 0px; width:100%" id="navbar">
+  <div style="display: flex;justify-content: space-between;">
+  
+    <div style="display: flex;">
+    <div>
+      <span class="navbar-brand"  [ngClass]="{white: colorBlue}" >GMI</span>
+    </div>
+    <div>
+      <div class="Home" [ngClass]="{white: colorBlue}">{{headerType}}</div>
+    </div>
+  </div>
+
+  <div style="display: flex;">
+    <div>
+      <span [ngClass]="{white: colorBlue}"><span><img src="assets/images/Avatar.png"/></span></span>
+      <span class="User-name white" [ngClass]="{white: colorBlue}" ><span><i></i></span>John Smith</span>
+      <span  ><span><img src="assets/images/Arrow.png"/></span></span>
+    </div>
+    
+  </div>
+
+  </div>
+</div>

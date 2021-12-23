@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
       }
       else{
      this.colorBlue=false;
+     let element=document.getElementById("navbar");    
+        if(element !== null){
+        element.style.backgroundColor="#fff";
+        }
       }
     }
     );
