@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tree-view',
@@ -6,14 +6,25 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./tree-view.component.scss'],
 })
 export class TreeViewComponent implements OnInit {
-  @Input('node')
-  node: any;
+  @Input('node') node: any = {};
+  @Output() selectLabel: EventEmitter<any> = new EventEmitter();
   showChildren = false;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showChildren = this.node?.root;
+  }
 
   onShowChildren() {
     this.showChildren = !this.showChildren;
+  }
+
+  onSelect(node: string) {
+    this.selectLabel.emit(node);
+  }
+
+  handleSelectEvent(event: any) {
+    console.log(' parent ', event);
+    this.selectLabel.emit(event);
   }
 }

@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    padding: 0 7px;
 
     .search-input {
       background-color: transparent;
@@ -36,7 +37,9 @@
       color: #292929;
       background-color: #fae44c;
       transition: 0.2s ease all;
+      pointer-events: none;
     }
+    input:valid ~ .floating-label,
     input:focus ~ .floating-label {
       top: -7px;
       font-size: 12px;

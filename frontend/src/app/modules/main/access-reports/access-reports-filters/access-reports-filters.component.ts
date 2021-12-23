@@ -10,6 +10,7 @@ export class AccessReportsFiltersComponent implements OnInit {
   openFilters = false;
   constructor() {}
   tree: any = {
+    root: true,
     label: 'Node 1',
     children: [
       {
@@ -38,6 +39,9 @@ export class AccessReportsFiltersComponent implements OnInit {
           },
         ],
       },
+      {
+        label: 'Child 3'
+      }
     ],
   }
 

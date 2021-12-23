@@ -1,12 +1,13 @@
 <div class="tree-dropdown">
-  <div class="tree-dropdown-input" (click)="onOpenDropdown()">
-    <input class="search-input" type="text" name="search-input" id="search-input">
+  <div class="tree-dropdown-input">
+    <input class="search-input" type="text" name="search-input" id="search-input" [(ngModel)]="value" #searchInput
+      required>
     <span class="floating-label">{{title}}</span>
-    <button class="toggle-button">
+    <button class="toggle-button" (click)="onOpenDropdown()">
       <img id="arrow" [ngClass]="{ rotate: openDropdown }" src="./assets/images/Arrow-up-black.png" />
     </button>
   </div>
   <div class="tree-container" *ngIf="openDropdown">
-    <app-tree-view [node]="tree"></app-tree-view>
+    <app-tree-view [node]="tree" (selectLabel)="onSelect($event)"></app-tree-view>
   </div>
 </div>
