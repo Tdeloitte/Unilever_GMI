@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonService } from 'src/app/services/common.service';
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { CommonService } from 'src/app/services/common.service';
 export class HeaderComponent implements OnInit {
   headerType!: String;
   colorBlue: boolean=false;
-  constructor(private commonService: CommonService) { }
+  constructor(private commonService: CommonService,private router:Router) { }
   
   ngOnInit(): void {
     this.commonService.reportType.subscribe((res)=>{this.headerType=res;
@@ -29,5 +30,16 @@ export class HeaderComponent implements OnInit {
     }
     );
     
+  }
+  // navigators(){
+  //   if(this.headerType !=="Home"){
+  //   this.router.navigate(["./home"]);
+  //   }
+  //   else if(this.headerType !=="Access Reports"){
+  //     this.router.navigate(["./access-report"]);
+  //   }
+  // }
+  navigateToHome(){
+    this.router.navigate(["./dashboard"]);
   }
 }

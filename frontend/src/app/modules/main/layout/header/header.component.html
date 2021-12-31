@@ -19,7 +19,7 @@
   
     <div style="display: flex;">
     <div>
-      <span class="navbar-brand"  [ngClass]="{white: colorBlue}" >GMI</span>
+      <span class="navbar-brand" (click)="navigateToHome()"  [ngClass]="{white: colorBlue}" >GMI</span>
     </div>
     <div>
       <div class="Home" [ngClass]="{white: colorBlue}">{{headerType}}</div>

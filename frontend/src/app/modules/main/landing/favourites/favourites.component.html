@@ -25,7 +25,7 @@
   <div class="favourites-tiles">
 
       <div *ngFor="let fav of favourites | paginate : { itemsPerPage:6 , currentPage:page, totalItems:totalLength  }" >   
-          <div style="display: flex;width:270px;height: 40px;border: solid 1px rgba(0, 0, 0, 0.2);margin-bottom:13px;" class="favourite-tile">
+          <div style="display: flex;width:270px;height: 40px;border: solid 1px rgba(0, 0, 0, 0.2);margin-bottom:13px;cursor: pointer;" class="favourite-tile">
             <div style="width: 40px;">
             <span *ngIf="checkIconType(fav) == true"><img src="./assets/images/access-icon.png"></span>
             <span *ngIf="checkIconType(fav) == false"><img src="./assets/images/export-icon.png"></span>
