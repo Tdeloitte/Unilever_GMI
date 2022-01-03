@@ -53,6 +53,7 @@ export class AccessReportsSelectDropdownComponent implements OnInit {
 
   onSelect(event: string) {
     console.log(event);
+    this.openDropdown = false;
     this.value = event;
   }
 }
