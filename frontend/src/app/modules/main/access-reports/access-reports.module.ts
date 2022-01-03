@@ -5,6 +5,8 @@ import { AccessReportsRoutingModule } from './access-reports-routing.module';
 import { AccessReportsComponent } from './access-reports/access-reports.component';
 import { AccessReportsDashboardComponent } from './access-reports-dashboard/access-reports-dashboard.component';
 import { AccessReportsSelectDropdownComponent } from './access-reports-select-dropdown/access-reports-select-dropdown.component';
+import { TreeViewComponent } from './tree-view/tree-view.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,11 +15,13 @@ import { AccessReportsSelectDropdownComponent } from './access-reports-select-dr
     AccessReportsFiltersComponent,
     AccessReportsComponent,
     AccessReportsDashboardComponent,
-    AccessReportsSelectDropdownComponent
+    AccessReportsSelectDropdownComponent,
+    TreeViewComponent
   ],
   imports: [
     CommonModule,
-    AccessReportsRoutingModule
+    AccessReportsRoutingModule,
+    FormsModule
   ]
 })
 export class AccessReportsModule { }

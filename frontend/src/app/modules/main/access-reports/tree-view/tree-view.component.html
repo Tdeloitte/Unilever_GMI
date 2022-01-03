@@ -1,0 +1,16 @@
+<ul [ngClass]="node?.root ? 'root-node' : ''">
+	<li [ngClass]="node?.children?.length ? 'container' : ''">
+		<div [ngClass]="node?.root ? 'root-node' : ''">
+			<p [ngClass]="node?.children?.length === 0 ? 'pointer' : ''"
+				(click)="node?.children?.length === 0 && onSelect(node?.label)">{{ node?.label }}
+				<button class="child-toggle" (click)="onShowChildren()" *ngIf="node?.children?.length">
+					<img [ngClass]="{ rotate: showChildren }" src="assets/images/Arrow-up-black.png" />
+				</button>
+			</p>
+		</div>
+		<ng-container *ngIf="node?.children?.length && showChildren">
+			<app-tree-view [node]="item" *ngFor="let item of node.children" (selectLabel)="handleSelectEvent($event)">
+			</app-tree-view>
+		</ng-container>
+	</li>
+</ul>
