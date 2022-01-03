@@ -15,7 +15,7 @@ export class AccessReportsComponent implements OnInit,OnDestroy {
     
   }
   ngOnDestroy(): void {
-    this.commonService.reportType.next("");   
+    this.commonService.reportType.next("Home");   
   }
 
 }
