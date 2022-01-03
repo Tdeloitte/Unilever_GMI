@@ -1,0 +1,14 @@
+<div class="container-dashboard">
+  <div class="flex-box">
+    <div class="report-blocks" *ngFor="let a of arr; let i = index">
+      <div>
+        <div class="img-blocks" (mouseenter) ="mouseEnter(i)"  (mouseleave) ="mouseLeave(i)"></div>
+      <div class="blue-blocks" (mouseenter) ="mouseEnter(i)"  (mouseleave) ="mouseLeave(i)">
+        <div style="width: 80%"></div>
+        <div style="width: 20%" class="favourite-box" (click)="chooseFavourite()" ><div><img id="{{i}}"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

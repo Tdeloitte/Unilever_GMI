@@ -1,42 +1,59 @@
-import { Component, OnInit } from '@angular/core';
-
+import {
+  Component,
+  ElementRef,
+  Input,
+  OnInit,
+  TemplateRef,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-access-reports-select-dropdown',
   templateUrl: './access-reports-select-dropdown.component.html',
-  styleUrls: ['./access-reports-select-dropdown.component.scss']
+  styleUrls: ['./access-reports-select-dropdown.component.scss'],
 })
 export class AccessReportsSelectDropdownComponent implements OnInit {
+  @Input('title') title: string = '';
+  @Input('tree') tree: any = {};
+  @ViewChild('searchInput') searchInput: any;
+  openDropdown = false;
+  pathList: any[] = [];
+  value: string = '';
 
-  constructor() { }
-  
- 
+  constructor() {}
+
   ngOnInit(): void {
-    let selected : any = document.querySelector(".selected");
-    let optionsContainer = document.querySelector(".options-container");
-  
-    let optionsList = document.querySelectorAll(".option");
-    if(selected !== null  ){
-    selected.addEventListener("click", () => {
-      if(optionsContainer !== null)
-      optionsContainer.classList.toggle("active");
-    });
-  }
-    
-    optionsList.forEach(o => {
-      
-      o.addEventListener("click", () => {
-        if(selected !== null ){
-          if( o != null){
-            selected.innerHTML = o.querySelector("label")?.innerHTML;
-          }     
-          if(optionsContainer != null)
-          optionsContainer.classList.remove("active");
-        }
-     
-      });
-    });
+    this.createPathList(this.tree, '');
   }
 
+  onOpenDropdown() {
+    this.openDropdown = !this.openDropdown;
+    if (this.openDropdown) this.searchInput.nativeElement.focus();
+  }
 
+  createPathList(node: any, path: string) {
+    let currentPath = `${path}/${node.label}`;
+    this.pathList.push(currentPath);
+    if (node?.children?.length) {
+      for (const childNode of node.children) {
+        this.createPathList(childNode, currentPath);
+      }
+    }
+  }
+
+  createPartialTree(tree: any, path: any) {
+    if (path !== '') {
+    }
+  }
+
+  onSearch(text: string) {
+    // for (const key in object) {
+    // }
+  }
+
+  onSelect(event: string) {
+    console.log(event);
+    this.openDropdown = false;
+    this.value = event;
+  }
 }

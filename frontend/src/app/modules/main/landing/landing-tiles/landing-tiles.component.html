@@ -1,74 +1,46 @@
 <div style="display:flex" >
     <div class="report-Tiles">
-        <!-- <div class="Access-title">
-            <div class="Access-report">
-                <img src="assets/Acces-reports.png"/>
-                <span>Access report</span>
-            </div>
-            <div class="Text">
-                Browse plenty of predefined reports to see your business performance, discover the trends and see areas that require your attention.
-                <span class="Enter">Enter</span>
-            </div>
-        </div> -->
-        <!-- <div class="Vector-92"></div> -->
-        <!-- <div class="Export-title">
-            <img src="assets/Export-data.png"/>
-            Export-data
-            <div class="Text">
-                Use an export wizard to download large sets of data for an ad hoc analysis.
-            </div>
-            <span class="Enter">Enter</span>
-        </div> -->
-        <div style="height: 242px; display:flex;border: 1px solid  #3399ff;" class="tile-hover">
+        <div style="height: 50%; display:flex;border-bottom: 1px solid  #3399ff;" class="tile-hover">
          <div style="width:397px" class="Title">
-            <img src="assets/Acces-reports.png" style="padding-left: 30px;"/>
-            <span style="padding-left: 49px;">Access report</span>
+            <img src="assets/images/Acces-reports.png" style="padding-left: 30px;"/>
+            <span style="padding-left: 20px;">Access report</span>
          </div>
          <div style="width:397px; position: relative;" class="Text">
-            <div style="padding-top: 80px">
+            <div style="padding-top: 90px">
                 Browse plenty of predefined reports to see your business performance, discover the trends and see areas that require your attention.
             </div>
-            <div style="position: absolute;bottom: 0px;right: 28.5px;">
-                <div class="Enter-Frame" style="cursor: pointer;" (click)="navigateAccessReports()">
+            <div style="position: absolute;bottom: 0px;right: 0px;cursor:pointer"  (click)="navigateAccessReports()">
+                <span class="Enter-Frame">
                     <span class="Enter">Enter</span>
-                </div>
+                </span>
+                <span class="Button-frame">
+                    <span class="Polygon-1"></span>
+                </span>
             </div>
-            <div style="padding: 65px 370px" (click)="navigateAccessReports()">
-                <div class="Button-frame" style="cursor: pointer;">
-                    <div class="Polygon-1"></div>
-                </div>
-            </div>
+            
          </div>
         </div> 
-        <div style="height:241px;display:flex" class="tile-hover">
+        <div style="height:50%;display:flex" class="tile-hover">
             <div style="width:397px" class="Title">
-                <img src="assets/Export-data.png" style="padding-left: 30px;" />
-               <span style="padding-left: 49px;">Export-data</span> 
+                <img src="assets/images/Export-data.png" style="padding-left: 30px;" />
+               <span style="padding-left: 20px;">Export-data</span> 
             </div>
             <div style="width:397px; position: relative;" class="Text">
                 <div style="padding-top: 98px; padding-right: 30px;">
                     Use an export wizard to download large sets of data for an ad hoc analysis.
                 </div>
-                <div style="position: absolute; padding: 70px 302px;">
-                    <div class="Enter-Frame">
+                <div style="position: absolute; right: 0px;bottom:0px; cursor:pointer">
+                    <span class="Enter-Frame" (click)="navigateAccessReports()">
                         <span class="Enter">Enter</span>
-                    </div>
-                </div>
-                <div style="padding: 70px 370px;">
-                    <div class="Button-frame">
-                        <div class="Polygon-1"></div>
-                    </div>
-                </div>
-                <!-- <div>
-                    <span class="Enter">Enter</span>
-                    <div class="Button-frame">
-                        <div class="Polygon-1"></div>
-                    </div>
-                </div> -->
+                    </span>
+                    <span class="Button-frame" >
+                        <span class="Polygon-1"></span>
+                    </span>
+                </div>               
             </div> 
         </div>
     </div>
-    <div style="width:646px">
-        <img class="Picture-tile" src="assets/Picture.png"/>
+    <div style="width:45%">
+        <img class="Picture-tile" height="auto" width="auto" src="assets/images/landing.png"/>
     </div>
 </div>

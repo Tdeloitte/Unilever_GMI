@@ -1,3 +1,5 @@
+@import "src/assets/scss/variables.scss"; 
+
 .filter-div {
   padding-top: 19px;
   padding-bottom: 23px;
@@ -24,7 +26,7 @@
 }
 .filter {
   width: 336px;
-  background-color: #fae44c;
+  background-color: $yellow;
   font-size: 14px;
   font-family: "Segoe UI";
   color: #000;
