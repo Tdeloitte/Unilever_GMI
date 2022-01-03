@@ -42,5 +42,9 @@ mouseLeave(ev:any) {
   }
 }
 
+chooseFavourite(){
+  
+}
+
 }
 
