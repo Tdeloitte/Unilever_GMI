@@ -21,7 +21,10 @@
     <div>
       <span class="navbar-brand" (click)="navigateToHome()"  [ngClass]="{white: colorBlue}" >GMI</span>
     </div>
-    <div>
+    <div style="display: flex;">
+      <div style="padding-right: 10px;padding-top:5px">
+        <img src="./assets/images/Access-reports-header.png">
+      </div>
       <div class="Home" [ngClass]="{white: colorBlue}">{{headerType}}</div>
     </div>
   </div>
