@@ -64,8 +64,8 @@
     position: absolute;
     width: 336px;
     max-height: 449px;
-    min-height: 300px;
-    padding: 9px 3px 5px 5px;
+    height: fit-content;
+    padding: 9px 3px 15px 5px;
     border: solid 1px #c8b63d;
     background-color: #fae44c;
     overflow-x: hidden;
