@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -20,15 +19,23 @@ const routes: Routes = [
       {
         path: 'access-report',
         loadChildren: () =>
-          import('./access-reports/access-reports.module').then((m) => m.AccessReportsModule),
+          import('./access-reports/access-reports.module').then(
+            (m) => m.AccessReportsModule
+          ),
+      },
+      {
+        path: 'export-data',
+        loadChildren: () =>
+          import('./export-data/export-data-routing.module').then(
+            (m) => m.ExportDataRoutingModule
+          ),
       },
     ],
-  }
+  },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class MainRoutingModule { }
+export class MainRoutingModule {}

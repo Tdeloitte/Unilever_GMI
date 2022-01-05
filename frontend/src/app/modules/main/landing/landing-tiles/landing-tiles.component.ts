@@ -15,4 +15,7 @@ export class LandingTilesComponent implements OnInit {
   navigateAccessReports(){
     this.router.navigate(["./access-report"]);
   }
+  navigateExportData(){
+    this.router.navigate(["./export-data"]);
+  }
 }
