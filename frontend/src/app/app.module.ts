@@ -7,6 +7,23 @@ import { AppComponent } from './app.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+
+import { MsalModule, MsalService, MSAL_INSTANCE } from '@azure/msal-angular';
+import {
+  IPublicClientApplication,
+  PublicClientApplication,
+} from '@azure/msal-browser';
+import { environment } from 'src/environments/environment';
+
+export function MSALInstanceFactory(): IPublicClientApplication {
+  return new PublicClientApplication({
+    auth: {
+      clientId: environment.azure.clientId,
+      redirectUri: 'http://localhost:4200',
+    },
+  });
+}
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -16,8 +33,15 @@ import { HttpClientModule } from '@angular/common/http';
     NgxPaginationModule,
     NoopAnimationsModule,
     HttpClientModule,
+    MsalModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: MSAL_INSTANCE,
+      useFactory: MSALInstanceFactory,
+    },
+    MsalService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
