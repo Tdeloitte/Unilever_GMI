@@ -1,19 +1,3 @@
-<!-- <nav class="navbar navbar-transparent" style="margin-bottom: 0px; width:100%" id="navbar" >
-  <div class="container-fluid" >
-    <div class="navbar-header">
-      <span class="navbar-brand" href="#" [ngClass]="{white: colorBlue}" >GMI</span>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="Home "><span [ngClass]="{white: colorBlue}">{{headerType}}</span></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="User"><span [ngClass]="{white: colorBlue}"><span><img src="assets/images/Avatar.png"/></span></span></li>
-      <li><span class="User-name white" [ngClass]="{white: colorBlue}" ><span><i></i></span>John Smith</span></li>
-      <li><span  ><span><img src="assets/images/Arrow.png"/></span></span></li>
-    </ul>
-  </div>
-</nav> -->
-
 <div style="margin-bottom: 0px; width:100%" id="navbar">
   <div style="display: flex;justify-content: space-between;">
   
@@ -22,8 +6,9 @@
       <span class="navbar-brand" (click)="navigateToHome()"  [ngClass]="{white: colorBlue}" >GMI</span>
     </div>
     <div style="display: flex;">
-      <div style="padding-right: 10px;padding-top:5px">
-        <img src="./assets/images/Access-reports-header.png">
+      <div *ngIf="!HomeFlag" style="padding-right: 10px;padding-top:5px">
+        <img *ngIf="AccessReports" src="./assets/images/Access-reports-header.png">
+        <img *ngIf="!AccessReports" src="./assets/images/Export-data-header.png">
       </div>
       <div class="Home" [ngClass]="{white: colorBlue}">{{headerType}}</div>
     </div>
@@ -33,7 +18,7 @@
     <div>
       <span class="User" [ngClass]="{white: colorBlue}"><span><img src="assets/images/Avatar.png"/></span></span>
       <span class="User-name white" [ngClass]="{white: colorBlue}" ><span><i></i></span>John Smith</span>
-      <span class="User"><span><img src="assets/images/Arrow.png"/></span></span>
+      <span class="User"><span><img *ngIf="HomeFlag" src="assets/images/Arrow.png"/> <img *ngIf="!HomeFlag" height="12px" width="14px" src="assets/images/Arrow-up-white.png"/></span></span>
     </div>
   </div>
 
