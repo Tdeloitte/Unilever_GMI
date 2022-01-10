@@ -8,5 +8,14 @@
        <button (click)="previousPage()">previous</button>
    </div> 
 
-   
+   <form [formGroup]='basicForm' >
+   <div *ngIf="counter == 1">
+    hey
+    <input type="text" formControlName="geo">
+   </div> 
+   <div *ngIf="counter == 2">
+    hey
+    <input type="text" formControlName="bran">
+   </div> 
+   </form>
 </div>

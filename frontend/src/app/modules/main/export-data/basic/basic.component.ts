@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder,FormControl, FormGroup, NgForm } from '@angular/forms';
+
 
 
 @Component({
@@ -10,7 +12,16 @@ export class BasicComponent implements OnInit {
 
  counter:any=1;
   pagesArray!: any[];
-  constructor() { }
+  basicForm: FormGroup;
+  geography: string="";
+  brand: string="";
+  constructor(private formBuilder:FormBuilder) {
+    this.basicForm=formBuilder.group({
+   geo: new FormControl(),
+   bran: new FormControl()
+
+    })
+   }
 
   ngOnInit(): void {
     this.loadPageData();
@@ -67,6 +78,8 @@ nextPage(){
   if(prevEl !=null)
   prevEl.style.backgroundColor="#f5f5f5";
   }
+  console.log(this.basicForm.controls['geo'].value);
+  console.log(this.basicForm.controls['bran'].value);
 }
 
 previousPage(){

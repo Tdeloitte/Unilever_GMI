@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BasicRoutingModule } from './basic-routing.module';
 import { BasicComponent } from './basic.component';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { BasicComponent } from './basic.component';
   ],
   imports: [
     CommonModule,
-    BasicRoutingModule
+    BasicRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class BasicModule { }
