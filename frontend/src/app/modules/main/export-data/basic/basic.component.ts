@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder,FormControl, FormGroup, NgForm } from '@angular/forms';
 
 
@@ -15,6 +15,7 @@ export class BasicComponent implements OnInit {
   basicForm: FormGroup;
   geography: string="";
   brand: string="";
+  @Input() geographyName="";
   constructor(private formBuilder:FormBuilder) {
     this.basicForm=formBuilder.group({
    geo: new FormControl(),
@@ -33,6 +34,11 @@ export class BasicComponent implements OnInit {
     this.firstPage();
   }
 
+  ngOnChange(){
+    this.getGeography;
+    console.log(this.geography);``
+
+  }
    loadPageData(){
      let pages:any[]=[
     {
@@ -79,7 +85,7 @@ nextPage(){
   prevEl.style.backgroundColor="#f5f5f5";
   }
   console.log(this.basicForm.controls['geo'].value);
-  console.log(this.basicForm.controls['bran'].value);
+  // console.log(this.basicForm.controls['bran'].value);
 }
 
 previousPage(){
@@ -103,6 +109,12 @@ firstPage(){
   console.log(el);
   if(el !=null)
   el.style.backgroundColor="yellow";
+}
+
+getGeography(value:any)
+{
+  this.basicForm.controls['geo'].setValue(value);
+  this.geography=value;
 }
 
 

@@ -11,10 +11,11 @@
    <form [formGroup]='basicForm' >
    <div *ngIf="counter == 1">
     hey
-    <input type="text" formControlName="geo">
+    <!-- <input type="text" formControlName="geo"> -->
+    <app-geography (geographyName)="getGeography($event)"></app-geography>
    </div> 
    <div *ngIf="counter == 2">
-    hey
+    hi
     <input type="text" formControlName="bran">
    </div> 
    </form>
