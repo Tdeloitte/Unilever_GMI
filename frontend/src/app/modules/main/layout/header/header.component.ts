@@ -9,10 +9,13 @@ import { CommonService } from 'src/app/services/common.service';
 export class HeaderComponent implements OnInit {
   headerType!: String;
   colorBlue: boolean=false;
+  AccessReports: boolean=false;
+  HomeFlag: boolean=false;
   constructor(private commonService: CommonService,private router:Router) { }
   
   ngOnInit(): void {
     this.commonService.reportType.subscribe((res)=>{this.headerType=res;
+      this.checkHeaderType();
       if(this.headerType !=="Home"){
         let element=document.getElementById("navbar");
         this.colorBlue=true;     
@@ -31,14 +34,21 @@ export class HeaderComponent implements OnInit {
     );
     
   }
-  // navigators(){
-  //   if(this.headerType !=="Home"){
-  //   this.router.navigate(["./home"]);
-  //   }
-  //   else if(this.headerType !=="Access Reports"){
-  //     this.router.navigate(["./access-report"]);
-  //   }
-  // }
+
+  checkHeaderType(){
+     if(this.headerType == "Home"){
+      this.HomeFlag=true;
+    }
+    else if(this.headerType == "Access reports"){
+      this.AccessReports=true;
+      this.HomeFlag=false;
+    }
+    else if(this.headerType == "Export data"){
+      this.AccessReports=false;
+      this.HomeFlag=false;
+    }  
+  }
+
   navigateToHome(){
     this.router.navigate(["./dashboard"]);
   }
