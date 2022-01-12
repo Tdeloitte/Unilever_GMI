@@ -23,6 +23,7 @@ export function MSALInstanceFactory(): IPublicClientApplication {
     },
   });
 }
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,6 +35,7 @@ export function MSALInstanceFactory(): IPublicClientApplication {
     NoopAnimationsModule,
     HttpClientModule,
     MsalModule,
+    ReactiveFormsModule,
   ],
   providers: [
     {

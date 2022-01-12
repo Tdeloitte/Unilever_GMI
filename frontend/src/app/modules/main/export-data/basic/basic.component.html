@@ -1,1 +1,22 @@
-<p>basic works!</p>
+<div class="nav">
+<div *ngFor="let arr of pagesArray" data-id={{arr.id}}>
+<span>{{arr.id}}</span>
+</div>  
+
+   <div>
+       <button (click)="nextPage()">next</button>
+       <button (click)="previousPage()">previous</button>
+   </div> 
+
+   <form [formGroup]='basicForm' >
+   <div *ngIf="counter == 1">
+    hey
+    <!-- <input type="text" formControlName="geo"> -->
+    <app-geography (geographyName)="getGeography($event)"></app-geography>
+   </div> 
+   <div *ngIf="counter == 2">
+    hi
+    <input type="text" formControlName="bran">
+   </div> 
+   </form>
+</div>

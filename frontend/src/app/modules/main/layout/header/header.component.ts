@@ -43,7 +43,7 @@ export class HeaderComponent implements OnInit {
       this.AccessReports=true;
       this.HomeFlag=false;
     }
-    else if(this.headerType == "Export reports"){
+    else if(this.headerType == "Export data"){
       this.AccessReports=false;
       this.HomeFlag=false;
     }  
