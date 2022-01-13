@@ -9,6 +9,7 @@
       width: 40%;
       min-width: 448px;
       margin: 0px 30px;
+      font-family: "UnileverShillingBold";
       font-size: 36px;
       font-weight: bold;
       font-stretch: normal;
@@ -20,7 +21,7 @@
     }
     .text {
       margin: 0 100px;
-      font-family: "Segoe UI";
+      font-family: "UnileverShilling";
       font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
@@ -59,6 +60,7 @@
         }
       }
       .title {
+        font-family: "UnileverShilling";
         flex-grow: 0;
         font-size: 30px;
         font-weight: bold;
@@ -239,7 +241,7 @@
           height: 40px;
           padding-top: 10px;
           flex-grow: 0;
-          font-family: "Segoe UI";
+          font-family: "UnileverShilling";
           font-size: 14px;
           font-weight: 500;
           font-stretch: normal;
