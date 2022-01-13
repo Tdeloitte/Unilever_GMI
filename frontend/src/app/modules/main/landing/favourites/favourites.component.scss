@@ -43,6 +43,14 @@
     color: #000;
     font-size: 14px;
 }
+.favourite-tile{
+  display: flex;
+  width:95%;
+  height: 40px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  margin-bottom:13px;
+  cursor: pointer;
+}
 .favourite-tile:hover{
   background-color:#F2F2F2;
 }

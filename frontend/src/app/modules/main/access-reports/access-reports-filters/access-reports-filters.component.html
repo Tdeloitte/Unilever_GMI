@@ -17,15 +17,16 @@
       <img
         id="arrow"
         [ngClass]="{ rotate: openScenario }"
-        src="./assets/images/Arrow-up-white.png"
+        src="./assets/images/Arrow-down-white.png"
         width="12px"
-        height="6px"
+        height="9px"
       />
     </span>
   </div>
   <div
     *ngIf="openScenario"
-    style="padding-top: 6px; background-color: #00b190; display: flex"
+    style=" background-color: #00b190; display: flex;flex-grow: 1;
+    flex-basis: 0;"
   >
     <div class="filter-div">
       <div style="height: 40px; width: 40px">
@@ -92,9 +93,9 @@
         <img
           id="arrow"
           [ngClass]="{ rotate: openFilters }"
-          src="./assets/images/Arrow-up-black.png"
+          src="./assets/images/Arrow.png"
           width="12px"
-          height="6px"
+          height="9px"
         />
       </span>
     </div>

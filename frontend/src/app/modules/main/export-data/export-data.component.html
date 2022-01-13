@@ -1,137 +1,127 @@
-<!-- Select your Path -->
-<div>
-	<div style="display:flex">
-		<div style="width: 100%;" class="Title">
-			<div class="Header-Name">
-				<span>Select your path</span>
+<div class="page-container">
+	<div class="title-container">
+		<div class="header-name">
+			<span>Select your path</span>
+		</div>
+		<div class="text">
+			<span>
+				If our set of standard reports or NLP capabilities are not enough for you, you can always export data in a
+				raw
+				format to create some unique or adhoc analysis. Make sure you share your outcome with us - maybe one day it
+				will become a standard report!
+			</span>
+		</div>
+	</div>
+	<div class="tiles-container">
+		<div class="tile basic" (click)="navigate('/export-data/basic')">
+			<div class="rating-container">
+				<img src="assets/images/Hat-icon.png" />
+				<img src="assets/images/Hat-icon-lite.png" />
+				<img src="assets/images/Hat-icon-lite.png" />
 			</div>
-			<div class="Text">
-				<span>
-					If our set of standard reports or NLP capabilities are not enough for you, you can always export data in a raw format to create some unique or adhoc analysis. Make sure you share your outcome with us - maybe one day it will become a standard report!
+			<span class="title">
+				Basic
+			</span>
+			<span class="text">
+				Easy to follow step-by-step guidance for a quick set up of your first export
+			</span>
+			<span class="enter-container">
+				<span class="enter-text">
+					Enter
+				</span>
+				<span class="enter-icon">
+					<span class="polygon"></span>
+				</span>
+			</span>
+		</div>
+		<div class="tile advanced" (click)="navigate('/export-data/advanced')">
+			<div class="rating-container">
+				<img src="assets/images/Hat-icon.png" />
+				<img src="assets/images/Hat-icon.png" />
+				<img src="assets/images/Hat-icon-lite.png" />
+			</div>
+			<span class="title">
+				Advanced
+			</span>
+			<span class="text">
+				For more regular and advanced users that know what they want and need an access to all settings
+			</span>
+			<span class="enter-container">
+				<span class="enter-text">
+					Enter
+				</span>
+				<span class="enter-icon">
+					<span class="polygon"></span>
+				</span>
+			</span>
+		</div>
+		<div class="tile hardcore" (click)="navigate('/export-data/hardcore')">
+			<div class="rating-container">
+				<img src="assets/images/Hat-icon-dark.png" />
+				<img src="assets/images/Hat-icon-dark.png" />
+				<img src="assets/images/Hat-icon-dark.png" />
+			</div>
+			<span class="title">
+				Hardcore
+			</span>
+			<span>
+				For all Hardcore Geeks, direct connection to our data base via Pivot Table
+			</span>
+			<span class="enter-container">
+				<span class="enter-text">
+					Enter
+				</span>
+				<span class="enter-icon">
+					<span class="polygon"></span>
+				</span>
+			</span>
+		</div>
+	</div>
+	<div class="page-section">
+		<span class="section-heading">
+			Previously Saved Templates
+		</span>
+		<div>
+			<div class="section-list">
+				<div class="list-item">
+					<img src="assets/images/export-icon.png" />
+					<span class="item-label">
+						Norway Ice Cream deep dive
+					</span>
+				</div>
+				<div class="list-item">
+					<img src="assets/images/export-icon.png" />
+					<span class="item-label">
+						US Deodorants adHoc
+					</span>
+				</div>
+				<div class="list-item">
+					<img src="assets/images/export-icon.png" />
+					<span class="item-label">
+						My monthly MDMS dataset
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-section">
+		<span class="section-heading">
+			Help & Support
+		</span>
+		<div class="section-list">
+			<div class="list-item">
+				<img src="assets/images/Play.png" />
+				<span class="item-label">
+					Video: How to export data
+				</span>
+			</div>
+			<div class="list-item">
+				<img src="assets/images/Play.png" />
+				<span class="item-label">
+					Video: Master data explained
 				</span>
 			</div>
 		</div>
 	</div>
 </div>
-
-<!-- Basic/Advanced/Hardcore -->
-<!-- Basic -->
-<div style="width: 100%;">
-	<div class="Frame-Basic" style="display: flex;">
-		<div>
-			<img src="assets/images/Hat-icon.png"/>
-			<img src="assets/images/Hat-icon-lite.png" style="padding-left: 6px;"/>
-			<img src="assets/images/Hat-icon-lite.png" style="padding-left: 6px;"/>
-		</div>
-		<span class="Basic">
-			Basic
-		</span>
-		<span class="TextLineBasic">
-			Easy to follow step-by-step guidance for a quick set up of your first export
-		</span>
-		<span class="Enter-Frame" style="cursor: pointer;">
-			<span class="Enter">
-				Enter
-			</span>
-		</span>
-		<span class="Button-Frame" style="cursor: pointer;">
-			<span class="Polygon-1"></span>
-		</span>
-	</div>
-	<!-- Advanced -->
-	<div class="Frame-Advanced">
-		<div>
-			<img src="assets/images/Hat-icon.png"/>
-			<img src="assets/images/Hat-icon.png" style="padding-left: 6px;"/>
-			<img src="assets/images/Hat-icon-lite.png" style="padding-left: 6px;"/>
-		</div>
-		<span class="Advanced">
-			Advanced
-		</span>
-		<span class="TextLineAdvanced">
-			For more regular and advanced users that know what they want and need an access to all settings
-		</span>
-		<span class="Enter-Frame-1" style="cursor: pointer;">
-			<span class="Enter">
-				Enter
-			</span>
-		</span>
-		<span class="Button-Frame-1" style="cursor: pointer;">
-			<span class="Polygon-1"></span>
-		</span>
-	</div>
-	<!-- Hardcore -->
-	<div class="Frame-Hardcore">
-		<div>
-			<img src="assets/images/Hat-icon-dark.png"/>
-			<img src="assets/images/Hat-icon-dark.png" style="padding-left: 6px;"/>
-			<img src="assets/images/Hat-icon-dark.png" style="padding-left: 6px;"/>
-		</div>
-		<span class="Hardcore">
-			Hardcore
-		</span>
-		<span class="TextLineHardcore">
-			For all Hardcore Geeks, direct connection to our data base via Pivot Table
-		</span>
-		<span class="Enter-Frame-2" style="cursor: pointer;">
-			<span class="Enter-1">
-				Enter
-			</span>
-		</span>
-		<span class="Button-Frame-2" style="cursor: pointer;">
-			<span class="Polygon-2"></span>
-		</span>
-	</div>
-</div>
-
-<!-- Previously Saved Templates -->
-<!-- (click)="navigate('/export-data/advanced')" -->
-<div>
-	<span class="Saved-Templates">
-		Previously Saved Templates
-	</span>
-	<div>
-		<div class="Favourites">
-			<img src="assets/images/export-icon.png"/>
-			<span class="Button-text">
-				Norway Ice Cream deep dive
-			</span>
-		</div>
-		<div class="Favourites">
-			<img src="assets/images/export-icon.png"/>
-			<span class="Button-text">
-				US Deodorants adHoc
-			</span>
-		</div>
-		<div class="Favourites">
-			<img src="assets/images/export-icon.png"/>
-			<span class="Button-text">
-				My monthly MDMS dataset
-			</span>
-		</div>
-	</div>
-</div>
-
-<!-- Help and Support -->
-<div style="clear: left;">
-	<span class="Help-Support">
-		Help & Support
-	</span>
-	<div>
-		<div class="Favourites-1">
-			<img src="assets/images/Play.png"/>
-			<span class="Button-text">
-				Video: How to export data
-			</span>
-		</div>
-		<div class="Favourites-1">
-			<img src="assets/images/Play.png"/>
-			<span class="Button-text">
-				Video: Master data explained
-			</span>
-		</div>
-	</div>
-</div>
-<!-- <div (click)="navigate('/export-data/hardcore')">
-  Hardcore
-</div> -->

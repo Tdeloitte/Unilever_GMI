@@ -1,26 +1,28 @@
-<div style="margin-bottom: 0px; width:100%" id="navbar">
-  <div style="display: flex;justify-content: space-between;">
-  
-    <div style="display: flex;">
-    <div>
-      <span class="navbar-brand" (click)="navigateToHome()"  [ngClass]="{white: colorBlue}" >GMI</span>
+<div class="header-container" id="navbar">
+  <div class="container-left">
+    <span class="navbar-brand" (click)="navigateToHome()" [ngClass]="{white: colorBlue}">GMI</span>
+    <div class="access-report-header" *ngIf="!HomeFlag" style="padding-right: 10px;padding-top:5px">
+      <img *ngIf="AccessReports" src="./assets/images/Access-reports-header.png">
+      <img *ngIf="!AccessReports" src="./assets/images/Export-data-header.png">
     </div>
-    <div style="display: flex;">
-      <div *ngIf="!HomeFlag" style="padding-right: 10px;padding-top:5px">
-        <img *ngIf="AccessReports" src="./assets/images/Access-reports-header.png">
-        <img *ngIf="!AccessReports" src="./assets/images/Export-data-header.png">
-      </div>
-      <div class="Home" [ngClass]="{white: colorBlue}">{{headerType}}</div>
-    </div>
+    <div class="navbar-item" [ngClass]="{white: colorBlue}">{{headerType}}</div>
   </div>
 
-  <div style="display: flex;">
-    <div>
-      <span class="User" [ngClass]="{white: colorBlue}"><span><img src="assets/images/Avatar.png"/></span></span>
-      <span class="User-name white" [ngClass]="{white: colorBlue}" ><span><i></i></span>John Smith</span>
-      <span class="User"><span><img *ngIf="HomeFlag" src="assets/images/Arrow.png"/> <img *ngIf="!HomeFlag" height="12px" width="14px" src="assets/images/Arrow-up-white.png"/></span></span>
-    </div>
-  </div>
-
+  <div class="container-right">
+    <span class="user" [ngClass]="{white: colorBlue}">
+      <span>
+        <img src="assets/images/Avatar.png" />
+      </span></span>
+    <span class="user-name white" [ngClass]="{white: colorBlue}">
+      <span>
+        <i></i>
+      </span>John Smith
+    </span>
+    <span class="user">
+      <span>
+        <img *ngIf="HomeFlag" src="assets/images/Arrow.png" />
+        <img *ngIf="!HomeFlag" height="12px" width="14px" src="assets/images/Arrow-up-white.png" />
+      </span>
+    </span>
   </div>
 </div>
