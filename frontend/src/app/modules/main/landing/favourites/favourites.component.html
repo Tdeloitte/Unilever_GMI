@@ -5,18 +5,7 @@
         <img src="./assets/images/Star.png" height="26px" width="26px" />
       </div>
       <div>
-        <span
-          style="
-            font-size: 24px;
-            font-weight: 700;
-            color: #000;
-            margin-left: 20px;
-            line-height: 1.1;
-            font-family: 'Segoe UI';
-          "
-          >Favourites</span
-        >
-            
+        <span class="Fav-header">Favourites</span>
       </div>
     </div>
     <div  *ngIf="openPagination" style="position:absolute;margin-right:13px;right:0px;"><pagination-controls (pageChange)="page = $event" previousLabel="" [maxSize]="5"

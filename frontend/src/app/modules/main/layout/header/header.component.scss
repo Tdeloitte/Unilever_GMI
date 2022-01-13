@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'UnileverShillingMedium';
+    src: url('../../../../../assets/fonts/UnileverShillingMedium.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.navbar-brand {
+    text-align: center;
+    font-family: 'UnileverShillingMedium';
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Home {
+    text-align: center;
+    font-family: 'UnileverShillingMedium';
+    font-size: 16px;
+    font-weight: 700;
+    padding-top :15px;
+    cursor: pointer;
+}
+// .User {
+//     height: 20px;
+//     background-size: 30px;
+// }
+.User img {
+    margin: 10px;
+}
+.User-name {
+    text-align: center;
+    font-family: 'UnileverShillingMedium';
+    font-size: 14px;
+    font-weight: 500;
+
+  
+}
+.white{
+color: white !important;
+
+}
+.blueBackground{
+    background-color: #005eef ;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color:#005eef !important ;
+}
+.navbar{
+    border-radius: 0px;
+}
