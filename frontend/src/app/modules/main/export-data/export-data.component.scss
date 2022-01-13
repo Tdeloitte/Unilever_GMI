@@ -33,11 +33,11 @@
   }
 
   .tiles-container {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 242px;
-    border: solid;
     .tile {
       position: relative;
       width: 33.33%;
@@ -79,8 +79,8 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        padding: 5px 12px 7px;
+        gap: 2px;
+        padding: 0;
         .enter-text {
           width: 67px;
           height: inherit;
@@ -101,7 +101,6 @@
           justify-content: flex-start;
           align-items: flex-start;
           padding: 8px 7px;
-          // gap: 10px;
 
           .polygon {
             width: 0;
@@ -126,17 +125,20 @@
             }
           }
         }
-        &:hover .enter-container {
-          .enter-text {
-            background-color: #fff;
-            color: #019478;
-          }
-          .enter-icon {
-            background-color: #fff;
-            color: #184ac9;
-            .polygon {
+        &:hover {
+          background-color: #019478;
+          .enter-container {
+            .enter-text {
               background-color: #fff;
-              border-left-color: #019478 !important;
+              color: #019478;
+            }
+            .enter-icon {
+              background-color: #fff;
+              color: #184ac9;
+              .polygon {
+                background-color: #fff;
+                border-left-color: #019478 !important;
+              }
             }
           }
         }
@@ -155,17 +157,20 @@
             }
           }
         }
-        &:hover .enter-container {
-          .enter-text {
-            background-color: #fff;
-            color: #005eef;
-          }
-          .enter-icon {
-            background-color: #fff;
-            color: #184ac9;
-            .polygon {
+        &:hover {
+          background-color: #184ac9;
+          .enter-container {
+            .enter-text {
               background-color: #fff;
-              border-left-color: #184ac9 !important;
+              color: #005eef;
+            }
+            .enter-icon {
+              background-color: #fff;
+              color: #184ac9;
+              .polygon {
+                background-color: #fff;
+                border-left-color: #184ac9 !important;
+              }
             }
           }
         }
@@ -186,6 +191,7 @@
           }
         }
         &:hover {
+          background-color: #e7c900;
           .enter-container {
             .enter-text {
               background-color: #292929;
