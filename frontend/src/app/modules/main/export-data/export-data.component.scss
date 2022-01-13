@@ -597,7 +597,7 @@
         float: left;
         display: flex;
         flex-direction: row;
-        gjustify-content: flex-start;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 2px;
         margin: 0px 16px 15px 0;
@@ -627,4 +627,5 @@
       }
     }
   }
+}
 }
