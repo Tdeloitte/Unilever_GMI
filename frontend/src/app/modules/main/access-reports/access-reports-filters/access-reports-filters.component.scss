@@ -2,10 +2,9 @@
 
 .filter-div {
   padding-top: 19px;
-  padding-bottom: 23px;
+  padding-bottom: 9px;
   padding-left: 20px;
   padding-right: 12px;
-  width: 240px;
   line-height: 1.1;
   font-size: 16px;
   font-weight: bold;
@@ -13,7 +12,8 @@
   display: flex;
   border: 1px solid #80d8c7;
   font-family: "Segoe UI";
-  height: 78px;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .rotate {
   transform: rotate(180deg);
