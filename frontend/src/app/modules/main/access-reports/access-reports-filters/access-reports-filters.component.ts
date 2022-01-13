@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./access-reports-filters.component.scss'],
 })
 export class AccessReportsFiltersComponent implements OnInit {
-  openScenario = false;
+  openScenario = true;
   openFilters = false;
   constructor() {}
   tree: any = {
