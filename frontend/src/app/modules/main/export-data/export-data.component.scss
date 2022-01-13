@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'UnileverShillingBold';
+    src: url('../../../../assets/fonts/UnileverShillingBold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UnileverShilling';
+    src: url('../../../../assets/fonts/UnileverShilling.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UnileverShillingMedium';
+    src: url('../../../../assets/fonts/UnileverShillingMedium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .Title {
     background-color: #e5e5e5;
 }
@@ -5,11 +26,11 @@
     width: 448px;
     height: 5px;
     margin: 42px 24px 27px 30px;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingBold';
     font-size: 36px;
-    font-weight: bold;
+    // font-weight: bold;
+    // font-style: normal;
     font-stretch: normal;
-    font-style: normal;
     line-height: 1.8;
     letter-spacing: normal;
     text-align: left;
@@ -23,11 +44,11 @@
     width: 630px;
     height: 73px;
     margin: 0 0 0 24px;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShilling';
     font-size: 16px;
-    font-weight: normal;
+    // font-weight: normal;
+    // font-style: normal;
     font-stretch: normal;
-    font-style: normal;
     line-height: 1.4;
     letter-spacing: normal;
     text-align: left;
@@ -50,11 +71,11 @@
     width: 81px;
     height: 39px;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingBold';
     font-size: 30px;
-    font-weight: bold;
+    // font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.3;
     letter-spacing: normal;
     text-align: left;
@@ -64,11 +85,11 @@
     height: 40px;
     align-self: stretch;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShilling';
     font-size: 14px;
-    font-weight: normal;
+    // font-weight: normal;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.4;
     letter-spacing: normal;
     text-align: left;
@@ -123,11 +144,11 @@
     width: 43px;
     height: 16px;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 16px;
-    font-weight: 500;
+    // font-weight: 500;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1;
     letter-spacing: normal;
     text-align: center;
@@ -137,11 +158,11 @@
     width: 43px;
     height: 16px;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 16px;
-    font-weight: 500;
+    // font-weight: 500;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1;
     letter-spacing: normal;
     text-align: center;
@@ -223,11 +244,11 @@
     width: 154px;
     height: 39px;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingBold';
     font-size: 30px;
-    font-weight: bold;
+    // font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.3;
     letter-spacing: normal;
     text-align: left;
@@ -237,11 +258,11 @@
     height: 40px;
     align-self: stretch;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShilling';
     font-size: 14px;
-    font-weight: normal;
+    // font-weight: normal;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.4;
     letter-spacing: normal;
     text-align: left;
@@ -263,11 +284,11 @@
     width: 145px;
     height: 39px;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingBold';
     font-size: 30px;
-    font-weight: bold;
+    // font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.3;
     letter-spacing: normal;
     text-align: left;
@@ -277,11 +298,11 @@
     height: 40px;
     align-self: stretch;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShilling';
     font-size: 14px;
-    font-weight: normal;
+    // font-weight: normal;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.4;
     letter-spacing: normal;
     text-align: left;
@@ -291,11 +312,11 @@
     width: 448px;
     height: 36px;
     margin: 24px 8px 23px 24px;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 24px;
-    font-weight: bold;
+    // font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.8;
     letter-spacing: normal;
     text-align: left;
@@ -320,7 +341,7 @@
     height: 40px;
     padding-top: 10px;
     flex-grow: 0;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShilling';
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -334,11 +355,11 @@
     width: 448px;
     height: 36px;
     margin: 44px 6px 24px 26px;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 24px;
-    font-weight: bold;
+    // font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
+    // font-style: normal;
     line-height: 1.8;
     letter-spacing: normal;
     text-align: left;

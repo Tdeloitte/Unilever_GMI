@@ -1,13 +1,21 @@
+@font-face {
+    font-family: 'UnileverShillingMedium';
+    src: url('../../../../../assets/fonts/UnileverShillingMedium.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .navbar-brand {
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 30px;
     font-weight: 500;
     cursor: pointer;
 }
 .Home {
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 16px;
     font-weight: 700;
     padding-top :15px;
@@ -22,7 +30,7 @@
 }
 .User-name {
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'UnileverShillingMedium';
     font-size: 14px;
     font-weight: 500;
 

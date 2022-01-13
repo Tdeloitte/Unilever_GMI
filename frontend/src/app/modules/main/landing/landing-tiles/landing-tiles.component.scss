@@ -1,5 +1,26 @@
 @import "src/assets/scss/variables.scss"; 
 
+@font-face {
+  font-family: 'UnileverShillingBold';
+  src: url('../../../../../assets/fonts/UnileverShillingBold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnileverShilling';
+  src: url('../../../../../assets/fonts/UnileverShilling.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnileverShillingMedium';
+  src: url('../../../../../assets/fonts/UnileverShillingMedium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 .report-Tiles{
   width: 55%;
   height: 472.28px;
@@ -11,10 +32,10 @@
   align-self: stretch;
   flex-grow: 1;
   font-size: 36px;
-  font-weight: bold;
+  // font-weight: bold;
   font-stretch: normal;
-  font-style: normal;
-  font-family: 'Segoe UI';
+  // font-style: normal;
+  font-family: 'UnileverShillingBold';
   text-align: left;
   line-height: 1.2;
   letter-spacing: normal;      
@@ -22,12 +43,12 @@
 .Text {
   align-self: stretch;
   flex-grow: 1;
-  font-family: 'Segoe UI';
+  font-family: 'UnileverShilling';
   text-align: left;
   font-size: 16px;
-  font-weight: normal;
+  // font-weight: normal;
   font-stretch: normal;
-  font-style: normal;
+  // font-style: normal;
   line-height: 1.4;
   letter-spacing: normal;
   color: #fff;
@@ -49,7 +70,7 @@
 .Enter {
   width: 43px;
   height: 16px;
-  font-family: 'Segoe UI';
+  font-family: 'UnileverShillingMedium';
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
