@@ -40,6 +40,7 @@
     width: 100%;
     // margin: 24px 101px 29px 102px;
     // padding: 11px 0 18px;
+    margin-bottom: 29px;
     border: solid 1px #c7c7c7;
 
     & > div:not(:last-child) {
@@ -62,6 +63,7 @@
         border-right: 1px solid #c7c7c7;
       }
       .search-section {
+        width: 50%;
         padding: 11px 26px;
         flex-grow: 1;
         .title {
@@ -119,25 +121,41 @@
     }
     .content-section {
       display: flex;
-      padding: 11px 26px;
+
+      & > div:not(:last-child) {
+        border-right: 1px solid #c7c7c7;
+      }
 
       .content {
         display: flex;
-        flex-grow: 1;
         flex-direction: column;
-        .contetn-header {
-          margin: 0 0 12px 0;
+        flex-grow: 1;
+        width: 50%;
+        .content-header {
+          margin: 11px 26px 12px 26px;
           font-family: UnileverShilling;
           font-size: 16px;
           font-weight: 500;
           color: #000;
         }
         .checklist {
+          margin: 0 26px 11px 26px;
           display: flex;
           flex-direction: column;
-          
         }
       }
     }
+  }
+}
+
+.section-boarder {
+  border-style: solid;
+  border-color: #c7c7c7;
+  border-width: 0;
+  &.bottom {
+    border-bottom-width: 1px;
+  }
+  &.right {
+    border-right-width: 1px;
   }
 }
