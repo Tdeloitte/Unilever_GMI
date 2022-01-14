@@ -20,3 +20,20 @@
 
 @import "./variables";
 @import "./layout";
+
+.form-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 9px;
+  input[type="radio"] {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: solid 2px #000;
+    background-color: #fff;
+  }
+  label {
+    margin: 0 0 0 10px;
+  }
+}
