@@ -1,4 +1,4 @@
-<div class="page-container">
+<div class="page-container" [formGroup]="advancedExportForm">
   <div class="section-header">
     Load a template
   </div>
@@ -62,35 +62,37 @@
         </div>
       </div>
     </div>
-    <div class="content-section">
+    <div class="content-section" formGroupName="dimension">
       <div class="content">
         <div class="content-header">
           Add brand data
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio">
-            <label for="">Name</label>
+            <input type="radio" value="name" formControlName="addBrandData" id="brand-data-name">
+            <label for="brand-data-name">Name</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio">
-            <label for="">For global/region brand position</label>
+            <input type="radio" value="For global/region brand position" formControlName="addBrandData"
+              id="brand-data-global">
+            <label for="brand-data-global">For global/region brand position</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio">
-            <label for="">For all brand position</label>
+            <input type="radio" value="For all brand position" formControlName="addBrandData" id="brand-data-all">
+            <label for="brand-data-all">For all brand position</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio">
-            <label for="">For local brands</label>
+            <input type="radio" value="For local brands" formControlName="addBrandData" id="brand-data-local">
+            <label for="brand-data-local">For local brands</label>
             <app-tooltip></app-tooltip>
           </div>
         </div>
       </div>
-      <div class="content">
+      <div class="content"
+        *ngIf="getFormGroup('dimension')['controls']['addBrandData'].value === 'For global/region brand position'">
         <div class="content-header">
           Select Brands
         </div>
@@ -114,7 +116,7 @@
       </div>
     </div>
   </div>
-  <div class="selection-table">
+  <div class="selection-table" formGroupName="metrics">
     <div class="table-header">
       Metrics
     </div>
@@ -123,25 +125,25 @@
         <div class="content-header">
           Absolute and Variance
         </div>
-        <div class="checklist">
+        <div class="checklist" formGroupName="absoluteAndVariance">
           <div class="form-checkbox">
-            <input type="checkbox">
-            <label for="">Value</label>
+            <input type="checkbox" formControlName="value" id="metrics-value">
+            <label for="metrics-value">Value</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox">
-            <label for="">Volume</label>
+            <input type="checkbox" formControlName="volume" id="metrics-volume">
+            <label for="metrics-volume">Volume</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox">
-            <label for="">Value Growth vs PP</label>
+            <input type="checkbox" formControlName="valueGrowthVSPP" id="metrics-valueGrowthVSPP">
+            <label for="metrics-valueGrowthVSPP">Value Growth vs PP</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox">
-            <label for="">Value Growth vs PY</label>
+            <input type="checkbox" formControlName="valueGrowthVSPY" id="metrics-valueGrowthVSPY">
+            <label for="metrics-valueGrowthVSPY">Value Growth vs PY</label>
             <app-tooltip></app-tooltip>
           </div>
         </div>
@@ -149,15 +151,15 @@
         <div class="content-header">
           Price
         </div>
-        <div class="checklist">
+        <div class="checklist" formGroupName="price">
           <div class="form-checkbox">
-            <input type="checkbox">
-            <label for="">Average Price</label>
+            <input type="checkbox" formControlName="averagePrice" id="price-averagePrice">
+            <label for="price-averagePrice">Average Price</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox">
-            <label for="">Average Price Index</label>
+            <input type="checkbox" formControlName="averagePriceIndex" id="price-averagePriceIndex">
+            <label for="price-averagePriceIndex">Average Price Index</label>
             <app-tooltip></app-tooltip>
           </div>
         </div>
@@ -166,62 +168,66 @@
         <div class="content-header">
           Market Share & Variance
         </div>
-        <div class="checklist">
+        <div class="checklist" formGroupName="marketShareAndVariance">
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-1">
+            <input type="checkbox" formControlName="valueShare" id="market-share-and-variance-1">
             <label for="market-share-and-variance-1">Value Share</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-2">
+            <input type="checkbox" formControlName="volumeShare" id="market-share-and-variance-2">
             <label for="market-share-and-variance-2">Volume Share</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-3">
+            <input type="checkbox" formControlName="valueShareDevelopmentVSPP" id="market-share-and-variance-3">
             <label for="market-share-and-variance-3">Value Share Development vs PP</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-4">
+            <input type="checkbox" formControlName="valueShareDevelopmentVSPY" id="market-share-and-variance-4">
             <label for="market-share-and-variance-4">Value Share Development vs PY</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-5">
+            <input type="checkbox" formControlName="valueShareDevFromValueShareChangesVSPP"
+              id="market-share-and-variance-5">
             <label for="market-share-and-variance-5">Value Share Dev from Value Share Changes vs PP</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-5">
-            <label for="market-share-and-variance-5">Value Share Dev from Value Share Changes vs PY</label>
+            <input type="checkbox" formControlName="valueShareDevFromValueShareChangesVSPY"
+              id="market-share-and-variance-6">
+            <label for="market-share-and-variance-6">Value Share Dev from Value Share Changes vs PY</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-6">
-            <label for="market-share-and-variance-6">Value Share Dev from Volume Share Changes vs PP</label>
+            <input type="checkbox" formControlName="valueShareDevFromVolumeShareChangesVSPP"
+              id="market-share-and-variance-7">
+            <label for="market-share-and-variance-7">Value Share Dev from Volume Share Changes vs PP</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-7">
-            <label for="market-share-and-variance-7">Value Share Dev from Volume Share Changes vs PY</label>
+            <input type="checkbox" formControlName="valueShareDevFromVolumeShareChangesVSPY"
+              id="market-share-and-variance-8">
+            <label for="market-share-and-variance-8">Value Share Dev from Volume Share Changes vs PY</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-8">
-            <label for="market-share-and-variance-8">Volume Share Development vs PP</label>
+            <input type="checkbox" formControlName="volumeShareDevelopmentVSPP" id="market-share-and-variance-9">
+            <label for="market-share-and-variance-9">Volume Share Development vs PP</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="market-share-and-variance-9">
-            <label for="market-share-and-variance-9">Volume Share Development vs PY</label>
+            <input type="checkbox" formControlName="volumeShareDevelopmentVSPY" id="market-share-and-variance-10">
+            <label for="market-share-and-variance-10">Volume Share Development vs PY</label>
             <app-tooltip></app-tooltip>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="selection-table">
+  <div class="selection-table" formGroupName="timeHorizon">
     <div class="table-header">
       Time Horizon
     </div>
@@ -230,44 +236,44 @@
         <div class="content-header">
           Select Periods
         </div>
-        <div class="checklist">
+        <div class="checklist" formGroupName="selectPeriods">
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-1">
+            <input type="checkbox" formControlName="l4w" id="select-periods-1">
             <label for="select-periods-1">L4W</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-2">
+            <input type="checkbox" formControlName="l12w" id="select-periods-2">
             <label for="select-periods-2">L12W</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-3">
+            <input type="checkbox" formControlName="mat" id="select-periods-3">
             <label for="select-periods-3">MAT</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-4">
+            <input type="checkbox" formControlName="ytd" id="select-periods-4">
             <label for="select-periods-4">YTD</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-5">
+            <input type="checkbox" formControlName="fy" id="select-periods-5">
             <label for="select-periods-5">FY</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-6">
+            <input type="checkbox" formControlName="quarters" id="select-periods-6">
             <label for="select-periods-6">Quarters</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-7">
+            <input type="checkbox" formControlName="months" id="select-periods-7">
             <label for="select-periods-7">Months</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" id="select-periods-8">
+            <input type="checkbox" formControlName="fourWeeks" id="select-periods-8">
             <label for="select-periods-8">4 Weeks</label>
             <app-tooltip></app-tooltip>
           </div>
@@ -279,15 +285,15 @@
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio" id="calendar-year-1">
+            <input type="radio" value="1" formControlName="calendarPeriods" id="calendar-year-1">
             <label for="calendar-year-1">1 Year</label>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="calendar-year-2">
+            <input type="radio" value="2" formControlName="calendarPeriods" id="calendar-year-2">
             <label for="calendar-year-2">2 Years</label>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="calendar-year-3">
+            <input type="radio" value="3" formControlName="calendarPeriods" id="calendar-year-3">
             <label for="calendar-year-3">3 Years</label>
           </div>
         </div>
@@ -302,17 +308,17 @@
       <div class="content">
         <div class="checklist">
           <div class="form-checkbox" style="margin-top: 20px;">
-            <input type="radio" id="cell-data-1">
+            <input type="radio" value="asPerPreviousSelection" formControlName="cellData" id="cell-data-1">
             <label for="cell-data-1">I want to export geographies and categories as specified in previous steps</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="cell-data-2">
+            <input type="radio" value="most72" formControlName="cellData" id="cell-data-2">
             <label for="cell-data-2">I want to export only 72 most important cells</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="cell-data-3">
+            <input type="radio" value="all" formControlName="cellData" id="cell-data-3">
             <label for="cell-data-3">I want to export all cells</label>
             <app-tooltip></app-tooltip>
           </div>
@@ -320,7 +326,7 @@
       </div>
     </div>
   </div>
-  <div class="selection-table">
+  <div class="selection-table" formGroupName="additionalOptions">
     <div class="table-header">
       Additional options
       <img class="toggle" src="../../../../../assets/images/Arrow.png" alt="">
@@ -332,11 +338,11 @@
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio" id="monthly-reporting">
+            <input type="radio" value="monthly" formControlName="selectDataSource" id="monthly-reporting">
             <label for="monthly-reporting">Monthly reporting</label>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="last-available">
+            <input type="radio" value="last-available" formControlName="selectDataSource" id="last-available">
             <label for="last-available">Last available</label>
           </div>
         </div>
@@ -346,17 +352,17 @@
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio" id="competitor-data-1">
+            <input type="radio" value="market-and-unilever-only" formControlName="competitorData" id="competitor-data-1">
             <label for="competitor-data-1">Add only market and Unilever</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="competitor-data-2">
+            <input type="radio" value="only-top-5" formControlName="competitorData" id="competitor-data-2">
             <label for="competitor-data-2">Add only top 5 competitors including Unilever</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="competitor-data-3">
+            <input type="radio" value="all-competitors" formControlName="competitorData" id="competitor-data-3">
             <label for="competitor-data-3">All competitor</label>
             <app-tooltip></app-tooltip>
           </div>
@@ -368,11 +374,11 @@
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio" id="sorty-by-geo">
+            <input type="radio" value="geography" formControlName="sortBy" id="sorty-by-geo">
             <label for="sorty-by-geo">Geography</label>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="sort-by-time">
+            <input type="radio" value="timeHorizon" formControlName="sortBy" id="sort-by-time">
             <label for="sort-by-time">Time Horizon</label>
           </div>
         </div>
@@ -382,11 +388,11 @@
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio" id="order-desc">
+            <input type="radio" value="descending" formControlName="orderBy" id="order-desc">
             <label for="order-desc">Descending</label>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="order-asc">
+            <input type="radio" value="ascending" formControlName="orderBy" id="order-asc">
             <label for="order-asc">Ascending</label>
           </div>
         </div>
@@ -396,12 +402,12 @@
         </div>
         <div class="checklist">
           <div class="form-checkbox">
-            <input type="radio" id="master-data-yes">
+            <input type="radio" value="yes" formControlName="includeMasterData" id="master-data-yes">
             <label for="master-data-yes">Yes</label>
             <app-tooltip></app-tooltip>
           </div>
           <div class="form-checkbox">
-            <input type="radio" id="master-data-no">
+            <input type="radio" value="no" formControlName="includeMasterData" id="master-data-no">
             <label for="master-data-no">No</label>
             <app-tooltip></app-tooltip>
           </div>
