@@ -3,15 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { AdvancedRoutingModule } from './advanced-routing.module';
 import { AdvancedComponent } from './advanced.component';
-
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AdvancedComponent
-  ],
-  imports: [
-    CommonModule,
-    AdvancedRoutingModule
-  ]
+  declarations: [AdvancedComponent],
+  imports: [CommonModule, AdvancedRoutingModule, SharedModule],
 })
-export class AdvancedModule { }
+export class AdvancedModule {}

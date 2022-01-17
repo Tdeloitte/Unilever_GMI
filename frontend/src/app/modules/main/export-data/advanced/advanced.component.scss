@@ -1,5 +1,6 @@
 .page-container {
   padding: 34px 101px;
+  position: relative;
 
   .section-header {
     font-family: UnileverShillingBold;
@@ -55,6 +56,13 @@
       font-size: 24px;
       font-weight: 500;
       color: #000;
+
+      .toggle {
+        height: 17px;
+        margin-left: 10px;
+        cursor: pointer;
+        transform: rotate(180deg);
+      }
     }
 
     .section-header-2 {
@@ -96,6 +104,9 @@
               flex-grow: 0;
               object-fit: contain;
               margin: 0;
+              & > toggle {
+                transform: rotate(180deg);
+              }
             }
             .search-placeholder {
               flex-grow: 1;
@@ -131,6 +142,56 @@
           margin: 0 26px 11px 26px;
           display: flex;
           flex-direction: column;
+        }
+      }
+    }
+  }
+
+  .page-footer {
+    position: sticky;
+    margin: 0 -101px -34px -101px;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #efeeee;
+    // margin: 70px 0 0;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 101px;
+    gap: 1px;
+
+    .action-button {
+      height: 44px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 3px 22px 5px;
+      background-color: #00b190;
+      cursor: pointer;
+
+      .text {
+        height: 18px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: center;
+        color: #fff;
+      }
+
+      &.light {
+        background-color: #efeeee;
+
+        .text {
+          height: 16px;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.14px;
+          text-align: left;
+          color: #a0a0a0;
         }
       }
     }
