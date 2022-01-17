@@ -9,11 +9,13 @@
   }
 
   .buttons-container {
+    display: flex;
+    flex-direction: row;
     .download-button {
-      width: fit-content;
+      border: solid;
       height: 38px;
       margin: 22px 18px 24px 0px;
-      padding: 13px 80px 14px 18px;
+      padding: 14px 18px;
       border: solid 1px #c7c7c7;
       display: flex;
       flex-direction: row;
@@ -93,6 +95,7 @@
               height: 20px;
               flex-grow: 0;
               object-fit: contain;
+              margin: 0;
             }
             .search-placeholder {
               flex-grow: 1;
@@ -100,20 +103,6 @@
               font-size: 14px;
               line-height: 1.43;
               color: #7d7d7d;
-            }
-          }
-          .tooltip {
-            margin: 0 20px;
-            width: 25px;
-            height: 25px;
-            margin: 12px 16px 37.5px 14px;
-            padding: 3px;
-            .tooltip-content {
-              content: "?";
-              width: 19px;
-              height: 19px;
-              padding: 1px 4px 0;
-              border: solid 1.5px #bebebe;
             }
           }
         }
