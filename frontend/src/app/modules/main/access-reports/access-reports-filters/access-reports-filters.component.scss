@@ -1,8 +1,8 @@
 @import "src/assets/scss/variables.scss"; 
 
 .filter-div {
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 12px;
   line-height: 1.1;
@@ -14,6 +14,7 @@
   font-family: "UnileverShilling";
   flex-grow: 1;
   flex-basis: 0;
+  align-items: center;
 }
 
 

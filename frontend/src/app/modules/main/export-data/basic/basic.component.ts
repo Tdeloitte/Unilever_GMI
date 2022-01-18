@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder,FormControl, FormGroup, NgForm } from '@angular/forms';
+import { CommonService } from 'src/app/services/common.service';
 
 
 
@@ -16,7 +17,7 @@ export class BasicComponent implements OnInit {
   geography: string="";
   brand: string="";
   @Input() geographyName="";
-  constructor(private formBuilder:FormBuilder) {
+  constructor(private formBuilder:FormBuilder,private commonService:CommonService) {
     this.basicForm=formBuilder.group({
    geo: new FormControl(),
    bran: new FormControl()
@@ -25,10 +26,12 @@ export class BasicComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.commonService.reportType.next("Export data : Basic Path");
     this.loadPageData();
- 
-    
+  }
 
+  ngOnDestroy(): void {
+    this.commonService.reportType.next("Home");   
   }
   ngAfterViewInit(){
     this.firstPage();

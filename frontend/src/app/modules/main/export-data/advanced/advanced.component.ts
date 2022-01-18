@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-advanced',
@@ -8,10 +9,17 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 })
 export class AdvancedComponent implements OnInit {
   advancedExportForm: FormGroup = new FormGroup({});
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private commonService: CommonService
+  ) {}
 
   ngOnInit(): void {
+    this.commonService.reportType.next('Export data : Advanced Path');
     this.createAdvancedExportForm();
+  }
+  ngOnDestroy(): void {
+    this.commonService.reportType.next('Home');
   }
 
   createAdvancedExportForm() {
