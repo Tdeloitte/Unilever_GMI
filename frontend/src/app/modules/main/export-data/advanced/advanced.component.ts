@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-advanced',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./advanced.component.scss']
 })
 export class AdvancedComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(private commonService:CommonService) { }
 
   ngOnInit(): void {
+    this.commonService.reportType.next("Export data : Advanced Path");
   }
-
+  ngOnDestroy(): void {
+    this.commonService.reportType.next("Home");   
+  }
+  
 }
