@@ -27,15 +27,7 @@
         </div>
         <div class="search-inputs">
           <div class="search-box">
-            <div class="search-icon">
-              <img src="assets/images/Search icon.svg" alt="">
-            </div>
-            <div class="search-placeholder">
-              Type the name of any product category
-            </div>
-            <div class="search-icon">
-              <img class="toggle" src="../../../../../assets/images/Arrow-up-black.png" alt="">
-            </div>
+            <app-search-tree [tree]="tree" [title]="'Type name of a country, region, etc.'"></app-search-tree>
           </div>
           <app-tooltip></app-tooltip>
         </div>
@@ -46,15 +38,7 @@
         </div>
         <div class="search-inputs">
           <div class="search-box">
-            <div class="search-icon">
-              <img src="assets/images/Search icon.svg" alt="">
-            </div>
-            <div class="search-placeholder">
-              Type the name of a country, region, etc.
-            </div>
-            <div class="search-icon">
-              <img class="toggle" src="../../../../../assets/images/Arrow-up-black.png" alt="">
-            </div>
+            <app-search-tree [tree]="tree" [title]="'Type name of a product category.'"></app-search-tree>
           </div>
           <app-tooltip></app-tooltip>
         </div>
