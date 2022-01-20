@@ -9,6 +9,41 @@ import { CommonService } from 'src/app/services/common.service';
 })
 export class AdvancedComponent implements OnInit {
   advancedExportForm: FormGroup = new FormGroup({});
+  tree: any = {
+    root: true,
+    label: 'Node 1',
+    children: [
+      {
+        label: 'Child 1',
+        children: [
+          {
+            label: 'Grand child 1',
+            children: [],
+          },
+          {
+            label: 'Grand child 2',
+            children: [],
+          },
+        ],
+      },
+      {
+        label: 'Child 2',
+        children: [
+          {
+            label: 'Grand child 3',
+            children: [],
+          },
+          {
+            label: 'Grand child 4',
+            children: [],
+          },
+        ],
+      },
+      {
+        label: 'Child 3',
+      },
+    ],
+  };
   constructor(
     private formBuilder: FormBuilder,
     private commonService: CommonService

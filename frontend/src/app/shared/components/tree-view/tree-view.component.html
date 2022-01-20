@@ -1,0 +1,20 @@
+<ul [ngClass]="node?.root ? 'root-node' : ''">
+  <li [ngClass]="node?.children?.length ? 'container' : ''">
+    <div class="label-container" [ngClass]="node?.root ? 'root-node' : ''">
+
+      <div class="input-container form-checkbox">
+        <input type="checkbox" [id]="'id-' + node?.label">
+        <label [for]="'id-' + node?.label">
+          {{ node?.label }}
+          <button class="child-toggle" (click)="onShowChildren()" *ngIf="node?.children?.length">
+            <img [ngClass]="{ rotate: showChildren }" src="assets/images/Arrow-up-black.png" />
+          </button>
+        </label>
+      </div>
+    </div>
+    <ng-container *ngIf="node?.children?.length && showChildren">
+      <app-tree-view [node]="item" *ngFor="let item of node.children" (selectLabel)="handleSelectEvent($event)">
+      </app-tree-view>
+    </ng-container>
+  </li>
+</ul>
