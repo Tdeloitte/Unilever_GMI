@@ -3,8 +3,22 @@
     <div class="search-icon">
       <img src="assets/images/Search icon.svg" alt="">
     </div>
-    <input class="search-input" type="text" name="search-input" id="search-input" [attr.placeholder]="title"
-      [(ngModel)]="value" #searchInput required>
+    <div class="chip-input-container">
+      <div class="chip-container" *ngIf="value?.length">
+        <div class="chip" *ngFor="let node of value | slice:0:4; let i = index">
+          <ng-container *ngIf="i < 3">
+            <span class="text">{{node.label}}</span>
+            <span class="button" (click)="unSelect(i)">X</span>
+          </ng-container>
+          <ng-container *ngIf="i == 3">
+            <span class="text">{{value.length - 3}} more</span>
+            <span class="button">X</span>
+          </ng-container>
+        </div>
+      </div>
+      <input class="search-input" type="text" name="search-input" id="search-input"
+        [attr.placeholder]="value.length ? '' : title" [(ngModel)]="value" #searchInput required>
+    </div>
     <button class="toggle-button" (click)="onOpenDropdown()">
       <img id="arrow" [ngClass]="{ rotate: openDropdown }" src="./assets/images/Arrow.png" />
     </button>

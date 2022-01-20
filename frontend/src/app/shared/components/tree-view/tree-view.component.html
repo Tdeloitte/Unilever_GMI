@@ -3,7 +3,7 @@
     <div class="label-container" [ngClass]="node?.root ? 'root-node' : ''">
 
       <div class="input-container form-checkbox">
-        <input type="checkbox" [id]="'id-' + node?.label">
+        <input type="checkbox" [id]="'id-' + node?.label" (change)="onSelect()" [checked]="node.checked">
         <label [for]="'id-' + node?.label">
           {{ node?.label }}
           <button class="child-toggle" (click)="onShowChildren()" *ngIf="node?.children?.length">
