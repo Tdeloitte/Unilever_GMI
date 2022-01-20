@@ -1,0 +1,92 @@
+.tree-dropdown {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  font-family: "UnileverShilling";
+  line-height: 1.43;
+  background-color: #fff;
+  color: #7d7d7d;
+  margin-right: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+
+  .tree-dropdown-input {
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 7px;
+
+    .search-icon {
+      // margin-top: -5px;
+    }
+
+    .search-input {
+      background-color: transparent;
+      border: none;
+      flex-shrink: 0;
+      width: 90%;
+      outline: none;
+    }
+    .toggle-button {
+      border: none;
+      background-color: transparent;
+      width: 10%;
+      outline: none;
+      img {
+        width: 12px;
+        height: 12px;
+      }
+      .rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .tree-container {
+    z-index: 1;
+    position: absolute;
+    width: inherit;
+    max-height: 449px;
+    height: fit-content;
+    border: solid 1px #c8b63d;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .tree-content-container {
+      position: relative;
+      .tree-component-header {
+        padding: 12px 15px;
+        background-color: #efeeee;
+        display: flex;
+        .action-button {
+          padding: 7px 10px;
+          background-color: #00b190;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.1;
+          text-align: center;
+          color: #fff;
+        }
+      }
+      .tree-component-footer {
+        padding: 12px 15px;
+        display: flex;
+        .action-button {
+          padding: 7px 10px;
+          background-color: #00b190;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.1;
+          text-align: center;
+          color: #fff;
+        }
+      }
+      .tree-view-container {
+        padding: 9px 3px 15px 5px;
+      }
+    }
+  }
+}

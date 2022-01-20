@@ -1,0 +1,28 @@
+<div class="tree-dropdown">
+  <div class="tree-dropdown-input">
+    <div class="search-icon">
+      <img src="assets/images/Search icon.svg" alt="">
+    </div>
+    <input class="search-input" type="text" name="search-input" id="search-input" [attr.placeholder]="title"
+      [(ngModel)]="value" #searchInput required>
+    <button class="toggle-button" (click)="onOpenDropdown()">
+      <img id="arrow" [ngClass]="{ rotate: openDropdown }" src="./assets/images/Arrow.png" />
+    </button>
+  </div>
+  <div class="tree-container" *ngIf="openDropdown">
+    <div class="tree-content-container">
+      <div class="tree-component-header">
+        <div class="form-checkbox">
+          <input type="checkbox" id="select-all-lower-level">
+          <label for="select-all-lower-level">Add all lover levels of the hierarchy</label>
+        </div>
+      </div>
+      <div class="tree-view-container">
+        <app-tree-view [node]="tree" (selectLabel)="onSelect($event)"></app-tree-view>
+      </div>
+      <div class="tree-component-footer">
+        <div class="action-button">Done</div>
+      </div>
+    </div>
+  </div>
+</div>
