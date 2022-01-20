@@ -8,11 +8,126 @@
 {
     "attributeName" : "For local brands",
     "value" :"Use this option to include local brands into the exported data set for all brand positions (Global,Regional,Local/Inc.)"
+},{
+  
+    "attributeName" : "For global/regional brand positions",
+    "value" :"Use this option to include local brands into the exported data set for all brand positions (Global,Regional,Local/Inc.)"
 },
 {
-    "attributeName" : "None",
-    "value" :"Use this option to exclude brand details from the data export file."
+    "attributeName" : "For all brand positions",
+    "value" :"Use this option to include local brands into the exported data set for all brand positions (Global,Regional,Local/Inc.)"
+},
+{
+    "attributeName" : "Yes",
+    "value" :"Use this option to extract data with both master data codes and descriptions for Geography, Category, Manufacturer and Brand."
+},
+{
+    "attributeName" : "No",
+    "value" :"Use this option to extract data descriptions only and exclude master data codes for Geography, Category, Manufacturer and Brand."
+},
+{
+    "attributeName" : "Last Available",
+    "value" :"New data is continuously input into GMI as it becomes available from the local agencies. Extracts based on the ‘Latest Available’ view of the GMI data are updated as new data becomes available during the month reporting calendar."
+},
+{
+    "attributeName" : "Monthly Available",
+    "value" :"Monthly reporting is a static dataset updated at a fixed point each month timed to align with the Unilever Financial Results reporting calendar."
+},
+{
+    "attributeName" : "Add only market and Unilever",
+    "value" :"Use this option to extract data for Total Market and Unilever only."
+},
+{
+    "attributeName" : "Add all competitor",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Add only top 5 competitors including Unilever",
+    "value" :"Use this option to extract data for Top 5 competitors only (based on their previous year value sales).Extract ALL MANUFACTURERS and Unilever’s data only."
+},
+{
+    "attributeName" : "4 weeks",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Months",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Quarters",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "FY",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "YTD",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "MAT",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "L12W",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "L4W",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Average Price",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Average Price Index",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Volume",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Grwoth vs PP",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Growth vs PY",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Share",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Volume Share",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Share Development vs. PP",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Share Development vs PY",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Share Dev from Value Share Changes vs PP ",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Value Share Dev from Volume Share Changes vs PP ",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+},
+{
+    "attributeName" : "Volume Share Development vs PP",
+    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
 }
-
     
 ]

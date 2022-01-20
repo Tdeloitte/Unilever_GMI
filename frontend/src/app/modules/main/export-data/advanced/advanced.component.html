@@ -75,12 +75,12 @@
             <input type="radio" value="For global/region brand position" formControlName="addBrandData"
               id="brand-data-global">
             <label for="brand-data-global">For global/region brand position</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('For global/region brand position')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="For all brand position" formControlName="addBrandData" id="brand-data-all">
             <label for="brand-data-all">For all brand position</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('For all brand position')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="For local brands" formControlName="addBrandData" id="brand-data-local">
@@ -98,17 +98,17 @@
           <div class="form-checkbox">
             <input type="radio">
             <label for="">All</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('All')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio">
             <label for="">Top 5</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Top 5')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio">
             <label for="">Select individual brands</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Select individual brands')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
@@ -127,22 +127,22 @@
           <div class="form-checkbox">
             <input type="checkbox" formControlName="value" id="metrics-value">
             <label for="metrics-value">Value</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="volume" id="metrics-volume">
             <label for="metrics-volume">Volume</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Volume')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueGrowthVSPP" id="metrics-valueGrowthVSPP">
             <label for="metrics-valueGrowthVSPP">Value Growth vs PP</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Growth vs PP')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueGrowthVSPY" id="metrics-valueGrowthVSPY">
             <label for="metrics-valueGrowthVSPY">Value Growth vs PY</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Growth vs PY')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
         <div class="section-boarder bottom"></div>
@@ -153,12 +153,12 @@
           <div class="form-checkbox">
             <input type="checkbox" formControlName="averagePrice" id="price-averagePrice">
             <label for="price-averagePrice">Average Price</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Average Price')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="averagePriceIndex" id="price-averagePriceIndex">
             <label for="price-averagePriceIndex">Average Price Index</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Average Price Index')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
@@ -170,56 +170,56 @@
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShare" id="market-share-and-variance-1">
             <label for="market-share-and-variance-1">Value Share</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="volumeShare" id="market-share-and-variance-2">
             <label for="market-share-and-variance-2">Volume Share</label>
-            <app-tooltip></app-tooltip>
+            <div (mouseover)="searchData('Volume Share')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShareDevelopmentVSPP" id="market-share-and-variance-3">
             <label for="market-share-and-variance-3">Value Share Development vs PP</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share Development vs PP')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShareDevelopmentVSPY" id="market-share-and-variance-4">
             <label for="market-share-and-variance-4">Value Share Development vs PY</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share Development vs PY')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShareDevFromValueShareChangesVSPP"
               id="market-share-and-variance-5">
             <label for="market-share-and-variance-5">Value Share Dev from Value Share Changes vs PP</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share Dev from Value Share Changes vs PP')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShareDevFromValueShareChangesVSPY"
               id="market-share-and-variance-6">
             <label for="market-share-and-variance-6">Value Share Dev from Value Share Changes vs PY</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share Dev from Value Share Changes vs PY')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShareDevFromVolumeShareChangesVSPP"
               id="market-share-and-variance-7">
             <label for="market-share-and-variance-7">Value Share Dev from Volume Share Changes vs PP</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share Dev from Volume Share Changes vs PP')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="valueShareDevFromVolumeShareChangesVSPY"
               id="market-share-and-variance-8">
             <label for="market-share-and-variance-8">Value Share Dev from Volume Share Changes vs PY</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Value Share Dev from Volume Share Changes vs PY')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="volumeShareDevelopmentVSPP" id="market-share-and-variance-9">
             <label for="market-share-and-variance-9">Volume Share Development vs PP</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Volume Share Development vs PP')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="volumeShareDevelopmentVSPY" id="market-share-and-variance-10">
             <label for="market-share-and-variance-10">Volume Share Development vs PY</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Volume Share Development vs PY')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
@@ -238,42 +238,42 @@
           <div class="form-checkbox">
             <input type="checkbox" formControlName="l4w" id="select-periods-1">
             <label for="select-periods-1">L4W</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('L4W')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="l12w" id="select-periods-2">
             <label for="select-periods-2">L12W</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('L12W')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="mat" id="select-periods-3">
             <label for="select-periods-3">MAT</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('MAT')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="ytd" id="select-periods-4">
             <label for="select-periods-4">YTD</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('YTD')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="fy" id="select-periods-5">
             <label for="select-periods-5">FY</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('FY')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="quarters" id="select-periods-6">
             <label for="select-periods-6">Quarters</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Quarters')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="months" id="select-periods-7">
             <label for="select-periods-7">Months</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Months')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="checkbox" formControlName="fourWeeks" id="select-periods-8">
             <label for="select-periods-8">4 Weeks</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('4 Weeks')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
@@ -308,17 +308,17 @@
           <div class="form-checkbox" style="margin-top: 20px;">
             <input type="radio" value="asPerPreviousSelection" formControlName="cellData" id="cell-data-1">
             <label for="cell-data-1">I want to export geographies and categories as specified in previous steps</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('I want to export geographies and categories as specified in previous steps')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="most72" formControlName="cellData" id="cell-data-2">
             <label for="cell-data-2">I want to export only 72 most important cells</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('I want to export only 72 most important cells')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="all" formControlName="cellData" id="cell-data-3">
             <label for="cell-data-3">I want to export all cells</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('I want to export all cells')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
@@ -353,17 +353,17 @@
             <input type="radio" value="market-and-unilever-only" formControlName="competitorData"
               id="competitor-data-1">
             <label for="competitor-data-1">Add only market and Unilever</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Add only market and Unilever')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="only-top-5" formControlName="competitorData" id="competitor-data-2">
             <label for="competitor-data-2">Add only top 5 competitors including Unilever</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Add only top 5 competitors including Unilever')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="all-competitors" formControlName="competitorData" id="competitor-data-3">
             <label for="competitor-data-3">All competitor</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('All competitor')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
@@ -403,19 +403,16 @@
           <div class="form-checkbox">
             <input type="radio" value="yes" formControlName="includeMasterData" id="master-data-yes">
             <label for="master-data-yes">Yes</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('Yes')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
           <div class="form-checkbox">
             <input type="radio" value="no" formControlName="includeMasterData" id="master-data-no">
             <label for="master-data-no">No</label>
-            <div (mouseover)="searchData('none')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
+            <div (mouseover)="searchData('No')"><app-tooltip [text]="tooltipsValue" ></app-tooltip></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div *ngFor="let i of tooltipsText">
-    <span >{{i.value}}</span>
   </div>
   <div class="page-footer">
     <div class="action-button">
