@@ -14,6 +14,7 @@ import {
 export class SearchTreeComponent implements OnInit {
   @Input('title') title: string = '';
   @Input('tree') tree: any = {};
+  node: any;
   @ViewChild('searchInput') searchInput: any;
   openDropdown = false;
   pathList: any[] = [];
@@ -21,13 +22,37 @@ export class SearchTreeComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.node = this.tree;
+  }
 
   onOpenDropdown() {
     this.openDropdown = !this.openDropdown;
     if (this.openDropdown) this.searchInput.nativeElement.focus();
   }
-  onSearch(text: string) {}
+  onSearch(text: string) {
+    const x = this.searchInNode(text, this.tree);
+    this.node = x || {};
+  }
+
+  searchInNode(text: string, node: any): any {
+    if ((node?.label as string)?.toLowerCase().includes(text)) {
+      return node;
+    } else if (node?.children?.length) {
+      for (const childNode of node.children) {
+        const result = this.searchInNode(text, childNode);
+        if (result !== false) {
+          return {
+            ...node,
+            children: [result],
+          };
+        }
+      }
+      return false;
+    } else {
+      return false;
+    }
+  }
 
   onSelect(event: any) {
     if (event.checked) {

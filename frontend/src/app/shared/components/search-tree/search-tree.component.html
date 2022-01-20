@@ -16,8 +16,8 @@
           </ng-container>
         </div>
       </div>
-      <input class="search-input" type="text" name="search-input" id="search-input"
-        [attr.placeholder]="value.length ? '' : title" [(ngModel)]="value" #searchInput required>
+      <input class="search-input" type="text" name="search-input" id="search-input" (keyup)="onSearch(searchInput.value)"
+        [attr.placeholder]="value.length ? '' : title" #searchInput required>
     </div>
     <button class="toggle-button" (click)="onOpenDropdown()">
       <img id="arrow" [ngClass]="{ rotate: openDropdown }" src="./assets/images/Arrow.png" />
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="tree-view-container">
-        <app-tree-view [node]="tree" (selectLabel)="onSelect($event)"></app-tree-view>
+        <app-tree-view [node]="node" (selectLabel)="onSelect($event)"></app-tree-view>
       </div>
       <div class="tree-component-footer">
         <div class="action-button">Done</div>
