@@ -1,0 +1,18 @@
+
+[
+    
+{
+"attributeName" : "None",
+"value" :"Use this option to exclude brand details from the data export file."
+},
+{
+    "attributeName" : "For local brands",
+    "value" :"Use this option to include local brands into the exported data set for all brand positions (Global,Regional,Local/Inc.)"
+},
+{
+    "attributeName" : "None",
+    "value" :"Use this option to exclude brand details from the data export file."
+}
+
+    
+]
