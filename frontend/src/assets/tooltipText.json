@@ -47,35 +47,35 @@
 },
 {
     "attributeName" : "4 weeks",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"4 Weeks aggregates data for 28 days for the first 12 periods and 29 days for 13th (30 in leap year)."
 },
 {
     "attributeName" : "Months",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Month aggregates data for the actual number of days in each month (e.g. 31 days for January, 28 days for February (29 in leap year))."
 },
 {
     "attributeName" : "Quarters",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Quarter aggregates data for the actual number of days in each quarter (i.e. Jan-Mar 90 days (91 leap year), Apr-Jun 91 days, Jul-Sep 92 days, Oct-Dec 92 days)."
 },
 {
     "attributeName" : "FY",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"FY aggregates data for the full year – 365 days (366 days in leap year)."
 },
 {
     "attributeName" : "YTD",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"YTD aggregates data from start of the year up to and including latest available day in the local data period."
 },
 {
     "attributeName" : "MAT",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"MAT aggregates data for latest 365 days counting back from the latest available day in the local data period."
 },
 {
     "attributeName" : "L12W",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"L12W aggregates data for latest 84 days counting back from the latest available day in the local data period."
 },
 {
     "attributeName" : "L4W",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"L4W aggregates data for latest 28 days counting back from the latest available day in the local data period."
 },
 {
     "attributeName" : "Average Price",
@@ -87,27 +87,27 @@
 },
 {
     "attributeName" : "Value",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Value sales (Retail Sales Value) is one of 2 basic KPI used in Market share reporting. Value sales is provided by local research agencies and transformed using GMI methodology to align data across Unilever."
 },
 {
     "attributeName" : "Volume",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Volume sales (Retail Sales Volume) is one of 2 basic KPI used in Market share reporting. Volume sales is provided by local research agencies and transformed using GMI methodology to align data across Unilever."
 },
 {
     "attributeName" : "Value Grwoth vs PP",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Value growth vs PP (Market Retail Sales Value Growth vsPP) is the simple change in retail sales value from previous period to current period for the reported market (eg total Dressing Europe) expressed as a percentage."
 },
 {
     "attributeName" : "Value Growth vs PY",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Value growth vs PY (Market Retail Sales Value Growth vsPY) is the simple change in retail sales value from corresponding period in previous year to current period for the reported market (eg total Dressing Europe) expressed as a percentage."
 },
 {
     "attributeName" : "Value Share",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :" Value Share is a Value Sales (Retail Sales Value) expressed as a percentage of the total category Value Sales."
 },
 {
     "attributeName" : "Volume Share",
-    "value" :"Use this option to extract data for all Unilever’s competitors on the market."
+    "value" :"Volume Share is a Volume Sales (Retail Sales Volume) expressed as a percentage of the total category Volume Sales."
 },
 {
     "attributeName" : "Value Share Development vs. PP",
