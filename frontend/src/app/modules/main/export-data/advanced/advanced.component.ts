@@ -16,35 +16,43 @@ export class AdvancedComponent implements OnInit {
   tree: any = {
     root: true,
     label: 'Node 1',
+    checked: false,
     children: [
       {
         label: 'Child 1',
+        checked: false,
         children: [
           {
             label: 'Grand child 1',
+            checked: false,
             children: [],
           },
           {
             label: 'Grand child 2',
+            checked: false,
             children: [],
           },
         ],
       },
       {
         label: 'Child 2',
+        checked: false,
         children: [
           {
             label: 'Grand child 3',
+            checked: false,
             children: [],
           },
           {
             label: 'Grand child 4',
+            checked: false,
             children: [],
           },
         ],
       },
       {
         label: 'Child 3',
+        checked: false,
       },
     ],
   };

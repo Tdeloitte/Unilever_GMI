@@ -18,12 +18,12 @@ export class TreeViewComponent implements OnInit {
     this.showChildren = !this.showChildren;
   }
 
-  onSelect(node: string) {
-    this.selectLabel.emit(node);
+  onSelect() {
+    this.node.checked = !this.node.checked;
+    this.selectLabel.emit(this.node);
   }
 
   handleSelectEvent(event: any) {
-    console.log(' parent ', event);
     this.selectLabel.emit(event);
   }
 }
